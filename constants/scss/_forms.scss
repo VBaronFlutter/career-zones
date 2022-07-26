@@ -1,0 +1,79 @@
+@mixin inputIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input {
+        width: 100%;
+        font-family: 'Catamaran',sans-serif;
+        font-size: 1em; 
+        padding: $unit-small $unit-medium $unit-small $unit-xlarge;
+        background-color: white;
+        border: 1px solid $color-border;
+        border-radius: $border-radius;
+        transition: all 200ms ease-in-out;
+
+        &:focus {
+            outline: 0;
+            border-color: $color-primary;
+
+            & + svg {
+                fill: $color-primary;
+            }
+        }
+    }
+
+    svg {
+        position: absolute;
+        width: $unit-medium;
+        margin-left: $unit-small;
+        fill: $color-text;
+        transition: all 150ms ease-in-out;
+    }
+}
+
+@mixin input {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input {
+        width: 100%;
+        font-family: 'Catamaran',sans-serif;
+        font-size: 1em;
+        padding: $unit-small $unit-medium;
+        line-height: 1.4;
+        background-color: white;
+        border: 1px solid $color-border;
+        border-radius: $border-radius;
+        transition: all 200ms ease-in-out;
+
+        &:focus {
+            outline: 0;
+            border-color: $color-primary;
+        }
+    }
+}
+
+@mixin select {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    select {
+        width: 100%;
+        font-family: 'Catamaran',sans-serif;
+        font-size: 1em;
+        height: $unit-xxlarge;
+        text-indent: $unit-small;
+        background-color: white;
+        border: 1px solid $color-border;
+        border-radius: $border-radius;
+        transition: all 200ms ease-in-out;
+
+        &:focus {
+            outline: 0;
+            border-color: $color-primary;
+        }
+    }
+}

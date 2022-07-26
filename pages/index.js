@@ -1,26 +1,15 @@
-const backgroundColor = '#eee'
+import Navbar from '../components/Navbar'
+import styles from './index.scss'
 
 export default function Home() {
-  return (
-    <div className="hello">
-      <p>Hello World</p>
-      <style jsx>{`
-        $color: red;
 
-        .hello {
-          background-color: ${backgroundColor};
-          padding: 100px;
-          text-align: center;
-          transition: 100ms ease-in background;
-          &:hover {
-            color: $color;
-          }
-
-          @media only screen and (max-width: 480px) {
-            font-size: 20px;
-          }
-        }
-      `}</style>
-    </div>
-  )
+    return (
+        <>
+            <style jsx>{styles}</style>
+            <div>
+                <Navbar />
+                <p>Hello World</p>
+            </div>
+        </>
+    )
 }

@@ -1,0 +1,29 @@
+$color: red;
+$backgroundColor: #eee;
+
+@import "./constants/scss/includes.scss";
+
+div {
+    background-color: $color-bg;
+    text-align: center;
+    transition: 100ms ease-in background;
+
+    @include siteGutter;
+
+    @media only screen and (max-width: 480px) {
+        font-size: 20px;
+    }
+}
+
+p {
+    color: $color-brand;
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
+:global(body) {
+    padding: 0;
+    margin: 0;
+}
