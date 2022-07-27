@@ -1,0 +1,31 @@
+@import "./constants/scss/includes.scss";
+
+nav {
+    color: $color-brand;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+
+    @include Druk-Medium-Cy-Gr-Web;
+    @include siteGutter;
+}
+
+ol {
+    display: flex;
+    justify-content: space-between;
+    @include width-limit;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    font-weight: 100;
+    display: block;
+    padding: $unit-medium 0;
+}

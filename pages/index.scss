@@ -1,11 +1,7 @@
-$color: red;
-$backgroundColor: #eee;
-
 @import "./constants/scss/includes.scss";
 
 div {
     background-color: $color-bg;
-    text-align: center;
     transition: 100ms ease-in background;
 
     @include siteGutter;
@@ -21,6 +17,9 @@ p {
     &:hover {
         color: $color-white;
     }
+}
+main {
+    background-color: black;
 }
 
 :global(body) {
