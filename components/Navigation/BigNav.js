@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './BigNav.scss'
 
 export default function BigNav() {
@@ -7,7 +8,7 @@ export default function BigNav() {
         <nav>
             <h2>Site Contents</h2>
             <ol>
-                <li><num>1.</num><p>What's it All About <small>How to use this guide to move your career forward?</small></p></li>
+                {/* <li><Link href="/about"><num>1.</num><p>What's it All About <small>How to use this guide to move your career forward?</small></p></Link></li> */}
                 <li><num>2.</num><p>The Fork in the Road <small>What happens when you hit a fork in the road?</small></p></li>
                 <li><num>3.</num><p>The Zone Matrix <small>When does your role and responsibility change?</small></p></li>
                 <li><num>4.</num><p>Sphere of Influence <small>What areas of influence should you have?</small></p></li>
