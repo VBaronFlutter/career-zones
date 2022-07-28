@@ -2,11 +2,15 @@
 
 nav {
     color: $color-brand;
-    position: absolute;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    position: sticky;
     top: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(255,255,255,0.8);
+    background: $color-white;
+    font-size: 1.3em;
 
     @include Druk-Medium-Cy-Gr-Web;
     @include siteGutter;
@@ -20,12 +24,16 @@ ol {
     padding: 0;
 }
 
+li {
+    padding-left: $unit-tiny;
+}
+
 a {
-    color: white;
+    color: $color-text;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 1.1em;
     font-weight: 100;
     display: block;
-    padding: $unit-medium 0;
+    padding: $unit-large 0;
+    text-decoration: none;
 }
