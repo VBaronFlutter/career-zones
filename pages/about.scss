@@ -1,3 +1,73 @@
 @import "./constants/scss/includes.scss";
 
+h1, h2, h4 {
+    @include Druk-Bold-Cy-Gr-Web;
+    margin: 0;
+    padding: 0;
+}
 
+h1 {
+    color: $color-brand;
+    font-size: 6em;
+    letter-spacing: 4px;
+}
+
+h2 {
+    color: $color-text;
+    font-size: 4em;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h4 {
+    @include Druk-Medium-Cy-Gr-Web;
+    font-weight: 300;;
+    font-size: 1.6em;
+    border-left: $unit-tiny solid $color-brand;
+    padding-left: $unit-medium;
+    margin: $unit-medium 0;
+    letter-spacing: 2px;
+}
+
+main {
+    @include siteGutter;
+}
+
+.intro {
+    @include width-limit;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: $unit-medium;
+
+}
+
+.quote {
+    background: $color-brand;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        max-width: 800px;
+        @include siteGutter;
+        margin: $unit-xlarge auto 100px;
+    }
+    
+    h4 {
+        border-color: white;
+        margin-bottom: $unit-xlarge;
+        line-height: 1.4;
+    }
+}
+
+figure {
+    width: 100%;
+    height: auto;
+    // background-color: $color-brand;
+    background-image: url('./img/WhatsItAbout.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}

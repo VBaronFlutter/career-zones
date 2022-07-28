@@ -2,10 +2,6 @@
 
 nav {
     color: $color-brand;
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // left: 0;
     position: sticky;
     top: 0;
     background: rgba(255,255,255,0.8);
@@ -26,6 +22,7 @@ ol {
 
 li {
     padding-left: $unit-tiny;
+    margin-left: 10px; // magic number to align stupid decimal list items
 }
 
 a {
