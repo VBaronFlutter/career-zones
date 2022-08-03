@@ -5,6 +5,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 @font-face {
 	font-family: "Druk LCG Web";
 	src: url("/fonts/Druk-Medium-Cy-Gr-Web.woff2") format("woff2"),

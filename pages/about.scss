@@ -41,6 +41,16 @@ main {
 
 }
 
+figure {
+    width: 100%;
+    height: auto;
+    background-image: url('./img/WhatsItAbout.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
 .quote {
     background: $color-brand;
     color: white;
@@ -49,25 +59,15 @@ main {
     flex-direction: column;
 
     div {
-        max-width: 800px;
         @include siteGutter;
         margin: $unit-xlarge auto 100px;
     }
     
     h4 {
+        max-width: 800px;
         border-color: white;
         margin-bottom: $unit-xlarge;
         line-height: 1.4;
     }
 }
 
-figure {
-    width: 100%;
-    height: auto;
-    // background-color: $color-brand;
-    background-image: url('./img/WhatsItAbout.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-}
