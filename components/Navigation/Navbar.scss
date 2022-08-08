@@ -21,8 +21,13 @@ ol {
 }
 
 li {
-    padding-left: $unit-tiny;
-    margin-left: 10px; // magic number to align stupid decimal list items
+    display: list-item;
+    list-style-position: inside;
+    margin-bottom: $unit-medium;
+
+    &.active {
+        border-bottom: 3px solid $color-brand;
+    }
 }
 
 a {
@@ -30,7 +35,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
-    display: block;
-    padding: $unit-large 0;
+    display: inline-block;
+    padding: $unit-large 0 $unit-small $unit-tiny;
     text-decoration: none;
 }
