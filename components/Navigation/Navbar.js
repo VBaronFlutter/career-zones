@@ -5,6 +5,7 @@ import styles from './Navbar.scss'
 export default function Navbar() {
 
     const Router = useRouter();
+    const zonePages = ['/zone', '/zone/early-careers', '/zone/zone-matrix'];
 
     return (
     <>
@@ -20,7 +21,7 @@ export default function Navbar() {
                 <li className={Router.asPath == "/fork" ? "active" : ""}>
                     <Link href="/fork"><a>The Fork in the Road</a></Link>
                 </li>
-                <li className={Router.asPath == "/zone" ? "active" : ""}>
+                <li className={zonePages.includes(Router.asPath) ? "active" : ""}>
                     <Link href="/zone"><a>The Zone Matrix</a></Link>
                 </li>
                 <li className={Router.asPath == "/influence" ? "active" : ""}>

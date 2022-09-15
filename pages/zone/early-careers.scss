@@ -1,0 +1,42 @@
+@import "./constants/scss/includes.scss";
+
+
+main {
+    @include siteGutter;
+}
+
+dl {
+    @include width-limit;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    height: calc(100vh - 74px);
+
+    :after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: calc($unit-xlarge*4 + $unit-medium);
+        left: 0;
+        height: $unit-tiny;
+        background: $color-border;
+
+    }
+}
+
+dt {
+    margin: 0 0 $unit-xlarge*4 0;
+    position: relative;
+    z-index: 2;
+    background: $color-white;
+    padding: $unit-small $unit-medium;
+    border: 2px solid $color-border;
+    border-radius: $unit-small;
+}
+
+dd {
+    position: absolute;
+    visibility: hidden;;
+}
