@@ -1,20 +1,19 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { appWithTranslation } from 'next-i18next';
 
 function MyApp({ Component, pageProps }) {
-    return (
-        <>
-        <Head>
-            <title>Career Zones </title>
-            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></link>
-            <link rel="stylesheet" href="/global.css" data-n-p=""></link>
-        </Head>
+  return (
+    <>
+      <Head>
+        <title>Career Zones</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      </Head>
 
-        <Component {...pageProps} />
-        </>
-    )
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default appWithTranslation(MyApp);
