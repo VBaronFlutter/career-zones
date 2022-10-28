@@ -1,13 +1,13 @@
 @import "./constants/scss/includes.scss";
 
 div {
-    background-color: $color-bg;
+    
     transition: 100ms ease-in background;
 
     @include siteGutter;
 
-    @media only screen and (max-width: 480px) {
-        font-size: 20px;
+    @include media-query(small) {
+        padding: 0 20px;
     }
 }
 
@@ -16,5 +16,42 @@ p {
 
     &:hover {
         color: $color-white;
+    }
+}
+
+.intro {
+    @include width-limit;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: $unit-medium;
+}
+
+figure {
+    width: 100%;
+    height: auto;
+    background-image: url('./img/WhatsItAbout.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.quote {
+    background: $color-brand;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        @include siteGutter;
+        margin: $unit-xlarge auto 100px;
+    }
+    
+    h4 {
+        max-width: 800px;
+        border-color: white;
+        margin-bottom: $unit-xlarge;
+        line-height: 1.4;
     }
 }

@@ -14,7 +14,7 @@ nav {
 
 ol {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     @include width-limit;
     margin: 0 auto;
     padding: 0;
@@ -24,6 +24,7 @@ li {
     display: list-item;
     list-style-position: inside;
     margin-bottom: $unit-medium;
+    margin-left: $unit-large;
 
     &.active {
         border-bottom: 3px solid $color-brand;

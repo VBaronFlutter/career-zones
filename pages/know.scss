@@ -16,6 +16,29 @@ h2 {
     line-height: 1;
 }
 
+svg {
+    width: 100%;
+    height: 400px;
+
+    path,
+    circle {
+        fill: #eee;
+        cursor: pointer;
+
+        &:hover {
+            stroke: #000;
+            stroke-width: 2px;
+            stroke-linejoin: round;
+        }
+
+        &.active {
+            stroke: #000;
+            stroke-width: 2px;
+            stroke-linejoin: round;
+        }
+    }
+}
+
 section {
     @include siteGutter;
 
