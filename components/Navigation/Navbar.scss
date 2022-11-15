@@ -29,9 +29,10 @@ li {
     &.active {
         border-bottom: 3px solid $color-brand;
     }
+
 }
 
-a {
+nav :global(a) {
     color: $color-text;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -39,4 +40,4 @@ a {
     display: inline-block;
     padding: $unit-large 0 $unit-small $unit-tiny;
     text-decoration: none;
-}
+  }
