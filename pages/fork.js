@@ -1,4 +1,5 @@
 import Navbar from '../components/Navigation/Navbar';
+import { useTranslation } from 'next-i18next';
 import styles from './fork.scss';
 
 export default function Fork() {

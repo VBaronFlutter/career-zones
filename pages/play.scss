@@ -1,10 +1,39 @@
 @import "./constants/scss/includes.scss";
 
-main {
+h1,
+h2 {
     @include Druk-Medium-Cy-Gr-Web;
+}
+
+main {
     @include siteGutter;
 }
 
 section {
     @include width-limit;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    width: 32%;
+}
+
+div {
+    width: 65%;
+    border: 1px solid teal
+}
+
+article {
+    border: 4px solid $color-brand;
+    margin-top: 50px;
+    position: relative;
+    padding: $unit-small $unit-medium;
+
+    h2 {
+        position: absolute;
+        top: -70px;
+        font-size: 2.4rem;
+        color: $color-brand;
+    }
 }

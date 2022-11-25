@@ -7,34 +7,53 @@ const Play = () => {
   const { t } = useTranslation('play');
 
   return (
+  <>
+    <Navbar />
+
     <main>
       <style jsx>{styles}</style>
-      <Navbar />
 
-      <section className="intro">
-        <h1>Test: {t('title')}</h1>
+      <section>
+        <aside className="intro">
+            <h1>{t('Playtitle')}</h1>
+            <h2>{t('PlaySubStart')} 70:20:10 {t('PlaySubEnd')}</h2>
+            <p>{t('PlaySubInfo')}</p>
 
-        <figure></figure>
-        <div>
-          <h1>Make You're Play</h1>
-          <h2>WHAT'S IT ABOUT?</h2>
-          <h4>
-            DIFFERENT PEOPLE WANT DIFFERENT THINGS FROM THEIR CAREER AND WE EMBRACE THE VARIETY OF
-            SKILLS WE HAVE HERE IN INTERNATIONAL SPORTS
-          </h4>
-          <p>
-            <strong>
-              IT's YOUR CAREER. Your development is what you make it. Ready to Make Your Play? Then
-              you've come to the right place. This tool has been designed to help you take control
-              of your career and drive your own development. Here is where you'll plan your next
-              move and decide how you'll get there.{' '}
-            </strong>
-          </p>
+            <h3>{t('MakeYourPlay')} <small>{t('PlayTextUnlock')}</small></h3>
+
+            <article>
+                <h2>70% {t('PlayExperienceTitle')}</h2>
+                <p>{t('PlayExperienceInfo')}</p>
+            </article>
+            <article>
+                <h2>20% {t('PlaySocialTitle')}</h2>
+                <p>{t('PlaySocialInfo')}</p>
+            </article>
+            <article>
+                <h2>10% {t('PlayTrainingTitle')}</h2>
+                <p>{t('PlayTraininginfo')}</p>
+            </article>
+
+            <h3>{t('PlayLastPara')}</h3>
+            <ul>
+                <li>{t('PlayLastParaBullets.1')}</li>
+                <li>{t('PlayLastParaBullets.2')}</li>
+                <li>{t('PlayLastParaBullets.3')}</li>
+                <li>{t('PlayLastParaBullets.4')}</li>
+            </ul>
+        </aside>
+
+        <div className='selected-learning'>
+            <p>My learning items render here</p>
         </div>
+
       </section>
     </main>
+  </>
   );
 };
+
+
 
 export default Play;
 
