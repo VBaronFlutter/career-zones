@@ -1,0 +1,10 @@
+@import "./constants/scss/includes.scss";
+
+main {
+    @include Druk-Medium-Cy-Gr-Web;
+    @include siteGutter;
+}
+
+section {
+    @include width-limit;
+}
