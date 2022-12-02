@@ -1,120 +1,35 @@
 @import "./constants/scss/includes.scss";
 
-
-h2 {
-    float: left;
-    width: calc(20% - $unit-medium);
-    height: $unit-medium*6;
-    padding-right: $unit-medium;
-
-    @include Druk-Medium-Cy-Gr-Web;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 3.5em;
-    color: $color-text;
-    margin: 0;
-    line-height: 1;
+.intro {
+    @include width-limit;
 }
 
-svg {
-    width: 100%;
-    height: 400px;
-
-    path,
-    circle {
-        fill: #eee;
-        cursor: pointer;
-
-        &:hover {
-            stroke: #000;
-            stroke-width: 2px;
-            stroke-linejoin: round;
-        }
-
-        &.active {
-            stroke: #000;
-            stroke-width: 2px;
-            stroke-linejoin: round;
-        }
-    }
-}
-
-section {
-    @include siteGutter;
-
-    > div {
-        @include width-limit;
-    }
-}
-
-.info {
-    h1 {
-        width: 100%;
-    }
-
-    ul {
-        width: 50%;
-        float: left;
-    }
-}
-
-.comps {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.columns {
     display: flex;
-    justify-content: space-between;
-    clear: left;
 
-    li {
-        width: 32%;
-    }
+    nav {
+        width: 25%;
 
-    button {
-        @include btn-secondary;
-        width: 100%;
+        a {
+            cursor: pointer;
+        }
 
-        @include Druk-Medium-Cy-Gr-Web;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 1.5em;
-        color: $color-secondary;
-        border-color: $color-secondary;
-        margin-bottom: $unit-small;
-    }
-}
-
-.results {
-    background: $color-brand;
-    padding: $unit-medium $unit-large;
-    color: $color-white;
-
-    ul {
-        width: 100%;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: $unit-medium;
+        ul,
+        li {
+            list-style-type: none;
+            padding-left: 0
+        }
 
         li {
-            line-height: 1.3;
-        }
-
-        h4 {
-            @include Druk-Medium-Cy-Gr-Web;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 1.6em;
-            margin: $unit-xlarge 0 0;
-            line-height: 1.1;
-            padding-bottom: $unit-small;
-            border-bottom: $unit-tiny solid $color-white;
+            padding: 2px 0
         }
     }
 
-    p {
-        margin: $unit-small 0 0;
+    .content {
+        width: 75%;
+
+        .scope {
+            margin: 0
+        }
     }
 }
