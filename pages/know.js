@@ -21,13 +21,17 @@ export default function KnowWhereYoureAt() {
   const [core, setCore] = useState(null);
   const [option, setOption] = useState('TRACK');
 
-  useEffect(() => {
-    setOption('CORE');
-  }, [core])
+  const handleOptionClick = (option, trackOrCore) => {
+    if (option === 'TRACK') {
+      setTrack(trackOrCore);
+      setOption('TRACK');
+    }
 
-  useEffect(() => {
-    setOption('TRACK');
-  }, [track])
+    if (option === 'CORE') {
+      setCore(trackOrCore);
+      setOption('CORE');
+    }
+  }
 
   return (
     <main>
@@ -48,17 +52,17 @@ export default function KnowWhereYoureAt() {
           <nav>
             <ul>
               <li>
-                <a onClick={() => { setTrack(engTracksIC.PROCESS) }}>
+                <a onClick={() => { handleOptionClick('TRACK', engTracksIC.PROCESS) }}>
                   {engTracksIC.PROCESS.displayName}
                 </a>
               </li>
               {Object.values(Competencies).map((competency) => (
                 <li>
-                  <a onClick={() => { setCore(competency) }}>{competency.title}</a>
+                  <a onClick={() => { handleOptionClick('CORE', competency) }}>{competency.title}</a>
                 </li>
               ))}
               <li>
-                <a onClick={() => { setTrack(engTracksIC.ENGINEERING) }}>
+                <a onClick={() => { handleOptionClick('TRACK', engTracksIC.ENGINEERING) }}>
                   {engTracksIC.ENGINEERING.displayName}
                 </a>
               </li>
