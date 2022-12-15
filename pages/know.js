@@ -4,13 +4,40 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import styles from './know.scss';
 import { engineeringIc } from '../data/engineering-ic';
 
-
 export default function KnowWhereYoureAt() {
+
+  const initialState = engineeringIc.competencies.reduce((compMemo, comp, compIndex) => {
+    return {
+      ...compMemo, [compIndex]: comp.levels.reduce((levelMemo, _, levelIndex) => {
+        return { ...levelMemo, [levelIndex]: [] }
+      }, {})
+    }
+  }, {});
 
   const { levels, competencies } = engineeringIc;
 
   const [level, setLevel] = useState(0);
-  const [competency, setCompetency] = useState(0)
+  const [competency, setCompetency] = useState(0);
+  const [selectedAreas, setSelectedAreas] = useState(initialState);
+
+  const onFocusAreaChange = (e, index) => {
+
+    const newAreas = e.target.checked
+      ? [...selectedAreas[competency][level], index]
+      : selectedAreas[competency][level].filter((area) => area !== index)
+
+    const newSelectedAreas = {
+      ...selectedAreas,
+      [competency]: {
+        ...selectedAreas[competency],
+        [level]: newAreas
+      }
+    }
+
+    console.dir(newSelectedAreas, { depth: null })
+
+    setSelectedAreas(newSelectedAreas)
+  }
 
   return (
     <main>
@@ -50,7 +77,7 @@ export default function KnowWhereYoureAt() {
               <h4>Areas of focus</h4>
               {competencies[competency].levels[level].focusAreas.length && (
                 <ul>
-                  {competencies[competency].levels[level].focusAreas.map((focusArea) => <li>{focusArea}</li>)}
+                  {competencies[competency].levels[level].focusAreas.map((focusArea, index) => <li><input type="checkbox" onChange={(e) => onFocusAreaChange(e, index)} checked={selectedAreas[competency][level].includes(index)} />{focusArea}</li>)}
                 </ul>
               )}
             </>
@@ -58,7 +85,16 @@ export default function KnowWhereYoureAt() {
           </div>
 
         </div>
+        <p>Selected areas of focus for <u>{competencies[competency].title}</u> at level <u>{levels[level].title}</u></p>
+        <ul>
+          {competencies[competency].levels[level].focusAreas.map((focusArea, index) => {
+            return selectedAreas[competency][level].includes(index) || !selectedAreas[competency][level].length
+              ? (<li>{focusArea}</li>)
+              : null
+          })}
+        </ul>
       </section>
+
     </main>
   );
 }
