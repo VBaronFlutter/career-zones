@@ -1,11 +1,15 @@
 import React from 'react';
 import Navbar from '../components/Navigation/Navbar';
-import Competencies from '../data/competencies.json';
+import type {Competencies} from '../api/Competencies';
 import styles from './know.scss';
 
-const compData = Competencies;
+const getData = async ():Promise<Competencies> => {
+  const res = await fetch(`http://localhost:3000/data/competencies.json`)
+  return res.json();
+}
 
-export default function KnowWhereYoureAt() {
+export default async function KnowWhereYoureAt() {
+  const compData = await getData();
   const [currentCompetency, setCurrentCompentency] = React.useState(compData.People);
 
   function handleClick(event) {

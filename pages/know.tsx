@@ -2,23 +2,22 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navigation/Navbar';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import styles from './know.scss';
-import { engineeringIc } from '../data/engineering-ic';
+import type { Engineeringic} from '../api/Engineeringic';
 
-export default function KnowWhereYoureAt() {
+export default function  KnowWhereYoureAt({engineeringIc}: {engineeringIc: Engineeringic}) {
 
-  const initialState = engineeringIc.competencies.reduce((compMemo, comp, compIndex) => {
+  const initialState = engineeringIc?.competencies?.reduce((compMemo, comp, compIndex) => {
     return {
       ...compMemo, [compIndex]: comp.levels.reduce((levelMemo, _, levelIndex) => {
         return { ...levelMemo, [levelIndex]: [] }
       }, {})
     }
   }, {});
-
   const { levels, competencies } = engineeringIc;
 
   const [level, setLevel] = useState(0);
   const [competency, setCompetency] = useState(0);
-  const [selectedAreas, setSelectedAreas] = useState(initialState);
+  const [selectedAreas, setSelectedAreas] = useState(initialState || {});
 
   const onFocusAreaChange = (e, index) => {
 
@@ -46,7 +45,7 @@ export default function KnowWhereYoureAt() {
 
       <section className='intro'>
 
-        <select onChange={(e) => setLevel(e.target.value)}>
+        <select onChange={(e) => setLevel((e as any).target.value)}>
           {Object.values(levels).map(({ title }, index) => <option key={`${title}-option`} value={index}>{title}</option>)}
         </select>
 
@@ -99,10 +98,16 @@ export default function KnowWhereYoureAt() {
   );
 }
 
+const getData = async ():Promise<Engineeringic> => {
+  const res = await fetch(`http://localhost:3000/data/engineering-ic.json`)
+  return res.json();
+}
+
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'know']))
+      ...(await serverSideTranslations(locale, ['common', 'know'])),
+      engineeringIc: await getData()
     }
   };
 }
