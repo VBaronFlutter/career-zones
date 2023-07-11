@@ -13,8 +13,9 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": ["next-env.d.ts", "global.d.ts", "**/*.ts", "**/*.tsx", "data/core.js"],
+  "include": ["next-env.d.ts", "typings.d.ts", "**/*.ts", "**/*.tsx", "data/core.js"],
   "exclude": ["node_modules"]
 }

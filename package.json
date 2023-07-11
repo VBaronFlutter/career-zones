@@ -5,14 +5,16 @@
     "build": "next build",
     "start": "next start",
     "api:types": "run-s api:types:*",
-    "api:types:clean": "trash api",
-    "api:types:generate": "node scripts/build-types.js public/data api"
+    "api:types:clean": "trash api/interface",
+    "api:types:generate": "node scripts/build-types.js public/data api/interface"
   },
   "dependencies": {
+    "isomorphic-fetch": "^3.0.0",
     "next": "^13.0.0",
     "next-i18next": "^12.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "swr": "^2.2.0"
   },
   "devDependencies": {
     "@styled-jsx/plugin-sass": "^3.0.0",
@@ -24,6 +26,7 @@
     "sass": "^1.32.8",
     "sass-loader": "^13.0.2",
     "trash-cli": "^5.0.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "typescript-plugin-css-modules": "^5.0.1"
   }
 }

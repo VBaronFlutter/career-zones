@@ -1,16 +1,12 @@
 import React from 'react';
 import Navbar from '../components/Navigation/Navbar';
-import type {Competencies} from '../api/Competencies';
+import type { Competencies } from '../api/interface/Competencies';
 import styles from './know.scss';
+import api from '../api/client';
 
-const getData = async ():Promise<Competencies> => {
-  const res = await fetch(`http://localhost:3000/data/competencies.json`)
-  return res.json();
-}
-
-export default async function KnowWhereYoureAt() {
-  const compData = await getData();
-  const [currentCompetency, setCurrentCompentency] = React.useState(compData.People);
+export default function KnowWhereYoureAt() {
+  const { data: compData } = api<Competencies>('/data/competencies.json');
+  const [currentCompetency, setCurrentCompentency] = React.useState(compData?.People);
 
   function handleClick(event) {
     const key = event.target.dataset.section;
@@ -156,11 +152,11 @@ export default async function KnowWhereYoureAt() {
 
       <section>
         <div className="results">
-          <h2>{currentCompetency.title}</h2>
+          <h2>{currentCompetency?.title}</h2>
           <p>
             <strong>CORE COMPETENCIES</strong>
           </p>
-          <p>{currentCompetency.description}</p>
+          <p>{currentCompetency?.description}</p>
           <ul>
             <li>
               <h4>
@@ -186,7 +182,7 @@ export default async function KnowWhereYoureAt() {
               </h4>
             </li>
 
-            {currentCompetency.core.map((Competency) => (
+            {currentCompetency?.core.map((Competency) => (
               <li key={Competency}>{Competency}</li>
             ))}
           </ul>

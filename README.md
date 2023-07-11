@@ -31,4 +31,5 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 ### API json data
 
 - All API data currently is static under folder `public/data`. Data is stored in flat JSON file structure.
-- To generate the types from all files in the folder run `npm run build:types`, this will create folder `/api` with file structure types.
+- To generate the types from all files in the folder run `npm run build:types`, this will create folder `/api/interface` with file structure types.
+- API data can be pre-fetch as initial data 
