@@ -1,0 +1,88 @@
+@import './constants/scss/includes.scss';
+
+/* Please use BEM https://getbem.com/ */
+
+/* Block Arrow */
+.arrow {
+  --text-color: #{$color-white};
+  --bg-color: #{$color-primary};
+
+  @include Druk-Medium-Cy-Gr-Web;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1em;
+  height: 40px;
+  min-width: 100px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  background-color: var(--bg-color);
+
+  &:after {
+    color: var(--bg-color);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+
+  &:before {
+    color: var(--text-color);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+
+  /* Element Text */
+  .arrow__text {
+    color: var(--text-color);
+    display: inline-block;
+    padding-top: 10px;
+  }
+
+  /* Modifier  Default */
+  &.arrow--default {
+    margin-right: 20px;
+    &:after {
+      border-left: 20px solid;
+      right: -20px;
+    }
+    &:before {
+      border-left: 20px solid;
+      left: 0;
+    }
+    .arrow__text {
+      padding-left: 30px;
+      padding-right: 10px;
+    }
+  }
+
+  /* Modifier  Back */
+  &.arrow--back {
+    --bg-color: #{$color-secondary};
+    margin-left: 20px;
+    &:after {
+      border-right: 20px solid;
+      left: -20px;
+    }
+    &:before {
+      border-right: 20px solid;
+      right: 0;
+    }
+    .arrow__text {
+      padding-left: 10px;
+      padding-right: 30px;
+    }
+  }
+
+  /* Modifier  Disabled */
+  // Disabled class is always last
+  &.arrow--disabled {
+    --bg-color: #{$color-dark};
+  }
+}
