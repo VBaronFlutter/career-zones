@@ -16,7 +16,6 @@ module.exports = {
         'sass-loader'
       ]
     });
-
     return config;
   }
 };

@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from '../components/Navigation/Navbar';
-import Competencies from '../data/competencies.json';
+import type { Competencies } from '../api/interface/Competencies';
 import styles from './know.scss';
-
-const compData = Competencies;
+import api from '../api/client';
 
 export default function KnowWhereYoureAt() {
-  const [currentCompetency, setCurrentCompentency] = React.useState(compData.People);
+  const { data: compData } = api<Competencies>('/data/competencies.json');
+  const [currentCompetency, setCurrentCompentency] = React.useState(compData?.People);
 
   function handleClick(event) {
     const key = event.target.dataset.section;
@@ -152,11 +152,11 @@ export default function KnowWhereYoureAt() {
 
       <section>
         <div className="results">
-          <h2>{currentCompetency.title}</h2>
+          <h2>{currentCompetency?.title}</h2>
           <p>
             <strong>CORE COMPETENCIES</strong>
           </p>
-          <p>{currentCompetency.description}</p>
+          <p>{currentCompetency?.description}</p>
           <ul>
             <li>
               <h4>
@@ -182,7 +182,7 @@ export default function KnowWhereYoureAt() {
               </h4>
             </li>
 
-            {currentCompetency.core.map((Competency) => (
+            {currentCompetency?.core.map((Competency) => (
               <li key={Competency}>{Competency}</li>
             ))}
           </ul>
