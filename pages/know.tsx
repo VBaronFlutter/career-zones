@@ -5,6 +5,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import type { Engineeringic } from '../api/interface/Engineeringic';
 import api from '../api/client';
 import styles from './know.scss';
+import Chip from '../components/Chip/Chip';
 
 const path = '/data/engineering-ic.json';
 const initEngineering: Engineeringic = {
@@ -102,7 +103,7 @@ export default function KnowWhereYoureAt() {
               {competencies[competency].levels[level].focusAreas.length && (
                 <ul>
                   {competencies[competency].levels[level].focusAreas.map((focusArea, index) => (
-                    <li>
+                    <li key={`${index}`}>
                       <input
                         type="checkbox"
                         onChange={(e) => onFocusAreaChange(e, index)}
@@ -124,10 +125,34 @@ export default function KnowWhereYoureAt() {
           {competencies[competency].levels[level].focusAreas.map((focusArea, index) => {
             return selectedAreas[competency][level].includes(index) ||
               !selectedAreas[competency][level].length ? (
-              <li>{focusArea}</li>
+              <li key={`${index}`}>{focusArea}</li>
             ) : null;
           })}
         </ul>
+
+        <Chip
+          size="large"
+          onClicks={[
+            () => console.log('TOP'),
+            () => console.log('RIGHT'),
+            () => console.log('BOTTOM'),
+            () => console.log('LEFT')
+          ]}
+          rotate={10}
+        >
+          Principal Engineer
+        </Chip>
+        <Chip disabled>Specialist</Chip>
+        <Chip
+          size="small"
+          type="secondary"
+          onClicks={[() => console.log('TOP'), , , () => console.log('LEFT')]}
+        >
+          Leads Individuals
+        </Chip>
+        <Chip size="x-small" type="secondary">
+          Leads Individuals
+        </Chip>
       </section>
     </main>
   );

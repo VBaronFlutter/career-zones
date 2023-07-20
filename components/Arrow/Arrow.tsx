@@ -5,7 +5,7 @@ import classnames from 'classnames';
 interface ArrowProps {
   children: React.ReactNode;
   type?: 'default' | 'back';
-  disabled: boolean;
+  disabled?: boolean;
 }
 /**
  *  Example of use

@@ -1,0 +1,74 @@
+@import './constants/scss/includes.scss';
+
+/* Please use BEM https://getbem.com/ */
+
+/* Block  */
+.chip {
+  --text-color: #{$color-white};
+  --bg-color: #{$color-black};
+  --size: 100px;
+  --rotate: 0deg;
+  --scale: 1;
+  --margin: 0;
+  --opacity: 1;
+
+  scale: var(--scale);
+  margin: var(--margin);
+  overflow: hidden;
+  display: inline-block;
+  transform: rotate(var(--rotate));
+  border-radius: 50%;
+  height: calc(var(--size) * 3);
+  width: calc(var(--size) * 3);
+  background-color: $color-white;
+
+  /* Element  */
+  &__content {
+    opacity: var(--opacity);
+    display: grid;
+    scale: 1.6;
+    grid-template-columns: var(--size) var(--size) var(--size);
+
+    &-box {
+      color: $color-white;
+      height: var(--size);
+      width: var(--size);
+    }
+  }
+  /* Modifier  */
+  &--rotate-5 {
+    --rotate: 5deg;
+  }
+  &--rotate--5 {
+    --rotate: -5deg;
+  }
+  &--rotate-10 {
+    --rotate: 10deg;
+  }
+  &--rotate--10 {
+    --rotate: -10deg;
+  }
+  &--size-xx-small {
+    --scale: 0.3;
+    --margin: -105px;
+  }
+  &--size-x-small {
+    --scale: 0.4;
+    --margin: -90px;
+  }
+  &--size-small {
+    --scale: 0.5;
+    --margin: -75px;
+  }
+  &--size-medium {
+    --scale: 0.6;
+    --margin: -60px;
+  }
+  &--size-large {
+    --scale: 0.7;
+    --margin: -45px;
+  }
+  &--disabled {
+    --opacity: 0.5;
+  }
+}
