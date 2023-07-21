@@ -1,68 +1,26 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../components/Navigation/Navbar';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import type { Engineeringic } from '../api/interface/Engineeringic';
-import api from '../api/client';
 import styles from './know.scss';
 import Chip from '../components/Chip/Chip';
-
-const path = '/data/engineering-ic.json';
-const initEngineering: Engineeringic = {
-  levels: [
-    {
-      title: '',
-      summary: ''
-    }
-  ],
-  competencies: [
-    {
-      title: '',
-      description: '',
-      levels: [
-        {
-          scope: [''],
-          focusAreas: [],
-          examples: {}
-        }
-      ]
-    }
-  ]
-};
+import useLevels from '../api/hooks/useLevels';
+import useCompetencies from '../api/hooks/useCompetencies';
+import {
+  useSelectedAreas,
+  setLevel,
+  setCompetency,
+  addLevel,
+  removeLevel
+} from '../api/hooks/useSelectedAreas';
 
 export default function KnowWhereYoureAt() {
-  const { data } = api<Engineeringic>(path);
-
-  const initialState = data.competencies.reduce((compMemo, comp, compIndex) => {
-    return {
-      ...compMemo,
-      [compIndex]: comp.levels.reduce((levelMemo, _, levelIndex) => {
-        return { ...levelMemo, [levelIndex]: [] };
-      }, {})
-    };
-  }, {});
-  const { levels, competencies } = data;
-
-  const [level, setLevel] = useState(0);
-  const [competency, setCompetency] = useState(0);
-  const [selectedAreas, setSelectedAreas] = useState(initialState || {});
+  const { competency, level, selectedAreas } = useSelectedAreas();
+  const levels = useLevels();
+  const competencies = useCompetencies();
 
   const onFocusAreaChange = (e, index) => {
-    const newAreas = e.target.checked
-      ? [...selectedAreas[competency][level], index]
-      : selectedAreas[competency][level].filter((area) => area !== index);
-
-    const newSelectedAreas = {
-      ...selectedAreas,
-      [competency]: {
-        ...selectedAreas[competency],
-        [level]: newAreas
-      }
-    };
-
-    console.dir(newSelectedAreas, { depth: null });
-
-    setSelectedAreas(newSelectedAreas);
+    e.target.checked ? addLevel(index) : removeLevel(index);
   };
 
   return (
@@ -72,7 +30,7 @@ export default function KnowWhereYoureAt() {
 
       <section className="intro">
         <select onChange={(e) => setLevel((e as any).target.value)}>
-          {Object.values(levels).map(({ title }, index) => (
+          {levels.map(({ title }, index) => (
             <option key={`${title}-option`} value={index}>
               {title}
             </option>
@@ -85,7 +43,7 @@ export default function KnowWhereYoureAt() {
         <div className="columns">
           <nav>
             <ul>
-              {Object.values(competencies).map((competency, index) => (
+              {competencies.map((competency, index) => (
                 <li key={`${competency.title}-link`}>
                   <a onClick={() => setCompetency(index)}>{competency.title}</a>
                 </li>
@@ -123,8 +81,7 @@ export default function KnowWhereYoureAt() {
         </p>
         <ul>
           {competencies[competency].levels[level].focusAreas.map((focusArea, index) => {
-            return selectedAreas[competency][level].includes(index) ||
-              !selectedAreas[competency][level].length ? (
+            return selectedAreas[competency][level].includes(index) ? (
               <li key={`${index}`}>{focusArea}</li>
             ) : null;
           })}
@@ -160,9 +117,6 @@ export default function KnowWhereYoureAt() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      api: {
-        [path]: initEngineering
-      },
       ...(await serverSideTranslations(locale, ['common', 'know']))
     }
   };
