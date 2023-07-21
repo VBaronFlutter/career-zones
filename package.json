@@ -3,20 +3,31 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "api:types": "run-s api:types:*",
+    "api:types:clean": "trash api/interface",
+    "api:types:generate": "node scripts/build-types.js public/data api/interface"
   },
   "dependencies": {
+    "classnames": "^2.3.2",
+    "isomorphic-fetch": "^3.0.0",
     "next": "^13.0.0",
     "next-i18next": "^12.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "swr": "^2.2.0"
   },
   "devDependencies": {
     "@styled-jsx/plugin-sass": "^3.0.0",
     "@types/node": "^20.4.0",
-    "@types/react": "^18.2.14",
+    "@types/react": "^18.2.15",
+    "json-ts": "^1.6.4",
+    "maketypes": "^1.1.2",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.32.8",
     "sass-loader": "^13.0.2",
-    "typescript": "^5.1.6"
+    "trash-cli": "^5.0.0",
+    "typescript": "^5.1.6",
+    "typescript-plugin-css-modules": "^5.0.1"
   }
 }

@@ -1,0 +1,108 @@
+@import './constants/scss/includes.scss';
+
+/* Please use BEM https://getbem.com/ */
+
+/* Block */
+.pentagon {
+  --bg-color: #{$color-primary};
+  --size: 100px;
+  --cursor: unset;
+  --hover: transparent;
+
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  border-collapse: collapse;
+
+  /* Element  */
+  &__box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: content-box;
+    border-width: 75px 30px 0;
+    border-style: solid;
+    border-color: var(--bg-color) transparent;
+  }
+
+  &__box-click {
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 15px;
+    cursor: var(--cursor);
+    overflow: hidden;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+
+    :hover {
+      background-color: var(--hover);
+    }
+  }
+  /* Modifier  */
+  &--top {
+    transform: translate(0px, 20px);
+  }
+  &--bottom {
+    transform: rotate(180deg) translate(0px, 20px);
+  }
+  &--left {
+    transform: rotate(-90deg) translate(0px, 20px);
+  }
+  &--right {
+    transform: rotate(90deg) translate(0px, 20px);
+  }
+  &--top-left {
+    transform: rotate(-45deg) translate(0px, 60px);
+  }
+  &--top-right {
+    transform: rotate(45deg) translate(0px, 60px);
+  }
+  &--bottom-left {
+    transform: rotate(-135deg) translate(0px, 60px);
+  }
+  &--bottom-right {
+    transform: rotate(135deg) translate(0px, 60px);
+  }
+  &--primary {
+    --bg-color: #{$color-primary};
+    z-index: 1;
+  }
+  &--secondary {
+    --bg-color: #{$color-secondary};
+    z-index: 1;
+  }
+  &--default {
+    --bg-color: #{$color-dark};
+  }
+  &--pulse {
+    @keyframes pulse {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+    animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  &--clickable {
+    --cursor: pointer;
+    --hover: rgba(255, 255, 255, 0.3);
+  }
+  &--disabled {
+    --cursor: unset;
+    --hover: transparent;
+  }
+}
