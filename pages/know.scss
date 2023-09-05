@@ -1,35 +1,174 @@
 @import "./constants/scss/includes.scss";
 
-.intro {
-    @include width-limit;
+section {
+    @include siteGutter;
+
+    > div {
+        @include width-limit;
+    }
 }
 
+.stripe-1 {
+    color: white;
+    background: repeating-linear-gradient(
+      45deg,
+      white,
+      white 10px,
+      transparent 10px,
+      transparent 20px
+    );
+  }
+
 .columns {
-    display: flex;
+    @include width-limit;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: $unit-medium;
+    background: $color-brand;
+    color: white;
+
+    h3 {
+        @include Druk-Medium-Cy-Gr-Web;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 3.5em;
+        margin: 0;
+        line-height: 1;
+    }
 
     nav {
-        width: 25%;
+        position: relative;
 
-        a {
-            cursor: pointer;
-        }
-
-        ul,
-        li {
+        ul {
             list-style-type: none;
-            padding-left: 0
+            padding: $unit-small;
+            margin: 0;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0; bottom: 0; left: 0;
+                width: $unit-xxlarge;
+                background: repeating-linear-gradient(
+                    -45deg,
+                    white,
+                    white 15px,
+                    transparent 15px,
+                    transparent 30px
+                );
+            }
         }
 
         li {
-            padding: 2px 0
+            @include Druk-Medium-Cy-Gr-Web;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.6em;
+            background: $color-brand;
+            border: 2px solid white;
+            margin: 0 0 $unit-small;
+            position: relative;
+            z-index: 10;
+            transition: all 250ms ease-in-out;
+
+            a {
+                position: relative;
+                display: flex;
+                padding: $unit-small $unit-medium;
+            }
+
+            &:first-child,
+            &:hover {
+                background: white;
+                color: $color-brand;
+                margin-right: -$unit-small;
+                border: 2px solid $color-brand;
+
+                &:after {
+                    content:"";
+                    position: absolute;
+                    top: 0;
+                    right: (-$unit-medium + 1px); // to stop gap between elements
+                    bottom: 0;
+                    padding: 1px;
+                    background-color: white;
+                    clip-path: polygon(15% 0, 100% 50%, 15% 100%, 0 100%, 0 0);;
+                    width: $unit-medium;
+                }
+            }
         }
     }
 
     .content {
-        width: 75%;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0 0 0 $unit-medium;
 
-        .scope {
-            margin: 0
+            li {
+                margin-bottom: $unit-medium;
+
+                input {
+                    position: absolute; // take it out of document flow
+                    opacity: 0; // hide it
+
+                    & + label {
+                        position: relative;
+                        cursor: pointer;
+                        padding: 0;
+                    }
+
+                    // Box.
+                    & + label:before {
+                        content: '';
+                        margin-right: 10px;
+                        display: inline-block;
+                        vertical-align: text-top;
+                        width: 20px;
+                        height: 20px;
+                        border: 2px solid white;
+                    }
+
+                    // Box hover
+                    &:hover + label:before {
+                        background: white;
+                    }
+
+                    // Box focus
+                    &:focus + label:before {
+                        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+                    }
+
+                    // Box checked
+                    &:checked + label:before {
+                        background: white;
+                    }
+
+                    // Disabled state label.
+                    &:disabled + label {
+                        color: #b8b8b8;
+                        cursor: auto;
+                    }
+
+                    &:checked + label:after {
+                        content: '';
+                        position: absolute;
+                        left: $unit-tiny;
+                        top: $unit-small;
+                        background: $color-brand;
+                        width: $unit-tiny;
+                        height: $unit-tiny;
+                        box-shadow:
+                          2px 0 0 $color-brand,
+                          4px 0 0 $color-brand,
+                          4px -2px 0 $color-brand,
+                          4px -4px 0 $color-brand,
+                          4px -6px 0 $color-brand,
+                          4px -8px 0 $color-brand;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
         }
     }
 }
