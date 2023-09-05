@@ -72,15 +72,11 @@ export default function KnowWhereYoureAt() {
 
       <section className="intro">
         <div>
-          <div onClick={(e) => setLevel((e as any).target.id)}>
-            {Object.values(levels).map(({ title }, index) => (
-              <Chip>
-                <div key={`${title}-option`} id={`${title}-${index}`}>
-                  {title}
-                </div>
-              </Chip>
-            ))}
-          </div>
+          {Object.values(levels).map(({ title }, index) => (
+            <div className="chip-item" key={`${title}-option`}>
+              <Chip onClick={() => setLevel(index)}>{title}</Chip>
+            </div>
+          ))}
 
           <h1>{levels[level].title}</h1>
           <h2>{levels[level].summary.toUpperCase()}</h2>

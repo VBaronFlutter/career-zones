@@ -19,6 +19,10 @@ section {
     );
   }
 
+.chip-item {
+    display: inline-block;
+}
+
 .columns {
     @include width-limit;
     display: grid;
