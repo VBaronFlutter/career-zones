@@ -1,0 +1,12 @@
+@import './constants/scss/includes.scss';
+
+/* Please use BEM https://getbem.com/ */
+
+/* Block  */
+.snake {
+  display: inline-block;
+  &__content {
+    display: inline-flex;
+    text-align: center;
+  }
+}

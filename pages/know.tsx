@@ -6,6 +6,8 @@ import type { Engineeringic } from '../api/interface/Engineeringic';
 import api from '../api/client';
 import styles from './know.scss';
 import Chip from '../components/Chip/Chip';
+import Snake from '../components/Snake/Snake';
+import Button from '../components/Button/Button';
 
 const path = '/data/engineering-ic.json';
 const initEngineering: Engineeringic = {
@@ -99,25 +101,28 @@ export default function KnowWhereYoureAt() {
                 <h4>Scope</h4>
                 <p>{competencies[competency].levels[level].scope.join(' ')}</p>
                 <h4>Areas of focus</h4>
-                {competencies[competency].levels[level].focusAreas.length &&
-                (
+                {competencies[competency].levels[level].focusAreas.length && (
                   <ul>
                     <li>
-                        <input
-                          type="checkbox"
-                          onChange={(e) => onFocusAreaChange(e, index)}
-                          id="foo"
-                        />
-                        <label htmlFor="foo"></label>
-                        test
-                      </li>
+                      <input
+                        type="checkbox"
+                        onChange={(e) => onFocusAreaChange(e, index)}
+                        id="foo"
+                      />
+                      <label htmlFor="foo"></label>
+                      test
+                    </li>
                     {competencies[competency].levels[level].focusAreas.map((focusArea, index) => (
                       <li key={`${index}`}>
                         <input
                           type="checkbox"
                           onChange={(e) => onFocusAreaChange(e, index)}
                           id={`${index}`}
-                          checked={selectedAreas[competency] && selectedAreas[competency][level] ? selectedAreas[competency][level].includes(index) : false}
+                          checked={
+                            selectedAreas[competency] && selectedAreas[competency][level]
+                              ? selectedAreas[competency][level].includes(index)
+                              : false
+                          }
                         />
                         <label htmlFor={`${index}`}></label>
                         {focusArea}
@@ -127,22 +132,63 @@ export default function KnowWhereYoureAt() {
                 )}
               </>
             </div>
-          <div className='content-selected'>
-            <p>
-              Selected areas of focus for <u>{competencies[competency].title}</u> at level{' '}
-              <u>{levels[level].title}</u>
-            </p>
-            <ul>
-              {/* {competencies[competency].levels[level].focusAreas.map((focusArea, index) => {
+            <div className="content-selected">
+              <p>
+                Selected areas of focus for <u>{competencies[competency].title}</u> at level{' '}
+                <u>{levels[level].title}</u>
+              </p>
+              <ul>
+                {/* {competencies[competency].levels[level].focusAreas.map((focusArea, index) => {
                 return selectedAreas[competency][level].includes(index) ||
                   !selectedAreas[competency][level].length ? (
                   <li key={`${index}`}>{focusArea}</li>
                 ) : null;
               })} */}
-            </ul>
-          </div>
+              </ul>
+            </div>
           </div>
         </div>
+
+        <Snake>
+          <Snake.Rib label="Build Relationships">
+            <Button type="secondary" full pushBottom="1" onClick={() => console.log('click')}>
+              People
+            </Button>
+            <Button type="secondary" full pushBottom="1" onClick={() => console.log('click')}>
+              Culture
+            </Button>
+          </Snake.Rib>
+
+          <Snake.Rib label="Outcome Focused" connect type="reverse">
+            <Button type="secondary" full pushBottom="1" onClick={() => console.log('click')}>
+              Game Changer
+            </Button>
+            <Button type="secondary" full pushBottom="1" onClick={() => console.log('click')}>
+              Results
+            </Button>
+          </Snake.Rib>
+
+          <Snake.Rib label="Future Planning" connect>
+            <Button type="secondary" full pushBottom="1" onClick={() => console.log('click')}>
+              Direction
+            </Button>
+            <Button type="secondary" full pushBottom="1" onClick={() => console.log('click')}>
+              Strategic Awareness
+            </Button>
+          </Snake.Rib>
+
+          <Snake.Rib label="Our Values" connect type="reverse">
+            <Button type="secondary" full pushBottom="1" onClick={() => console.log('click')}>
+              Empower & own
+            </Button>
+            <Button type="secondary" full pushBottom="1" onClick={() => console.log('click')}>
+              Win together
+            </Button>
+            <Button type="secondary" full pushBottom="1" onClick={() => console.log('click')}>
+              Passion for Players
+            </Button>
+          </Snake.Rib>
+        </Snake>
       </section>
     </main>
   );
