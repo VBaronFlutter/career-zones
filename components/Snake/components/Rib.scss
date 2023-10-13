@@ -1,0 +1,151 @@
+@import './constants/scss/includes.scss';
+
+/* Please use BEM https://getbem.com/ */
+
+/* Block  */
+.rib {
+  --text-color: #{$color-black};
+  --bg-color: #{$color-white};
+  --bg-color-snake: #{$color-primary};
+  --bg-color-outline: #{$color-dark};
+  --size: 50px;
+  --margin: 0px;
+  --cursor: default;
+  --thick: calc(var(--size) / 3);
+  --rotate: 0deg;
+
+  --opacity-connector: 0;
+  --margin-connector: 0px;
+  --transform-connector: translate(-100%, 100%) rotateX(0deg);
+  --left-connector: var(--thick);
+  --background-color-hover: var(--bg-color);
+
+  margin: var(--margin);
+  margin-left: calc(var(--margin) - var(--margin-connector));
+  overflow: hidden;
+  display: inline-block;
+  background-color: var(--bg-color);
+  background: transparent;
+
+  /* Element  */
+  &__content {
+    position: relative;
+    &-circle {
+      transform: rotateX(var(--rotate));
+      &-top {
+        box-sizing: border-box;
+        border-radius: calc(var(--size) * 2) calc(var(--size) * 2) 0 0;
+        height: calc((var(--size) * 3) / 2);
+        width: calc(var(--size) * 3);
+
+        border-width: var(--thick);
+        border-style: solid;
+        border-color: var(--bg-color-snake);
+        border-bottom: 0;
+      }
+      &-bottom {
+        box-sizing: border-box;
+        border-radius: 0 0 calc(var(--size) * 2) calc(var(--size) * 2);
+        height: calc((var(--size) * 3) / 2);
+        width: calc(var(--size) * 3);
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--bg-color-outline);
+        border-top: 0;
+      }
+
+      &-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -0%) rotateX(180deg);
+        color: var(--text-color);
+        box-sizing: border-box;
+        border-radius: calc(var(--size) * 2) calc(var(--size) * 2) 0 0;
+        height: calc(((var(--size) * 3) - var(--thick) * 2) / 2);
+        width: calc((var(--size) * 3) - var(--thick) * 2);
+
+        border-width: 1px;
+        border-bottom: 0;
+
+        border-style: solid;
+        border-color: var(--bg-color-outline);
+      }
+    }
+
+    &-connector {
+      position: absolute;
+      top: 0%;
+      transform: var(--transform-connector);
+      left: var(--left-connector);
+      box-sizing: border-box;
+      border-width: var(--thick);
+      border-style: solid;
+      border-color: var(--bg-color-snake);
+      border-radius: 0 0 calc(var(--size) * 2) calc(var(--size) * 2);
+      border-top: 0;
+      height: calc((var(--size) * 3) / 2);
+      width: calc(var(--size) * 3);
+      opacity: var(--opacity-connector);
+      background: transparent;
+    }
+
+    &-text {
+      z-index: 1;
+      cursor: var(--cursor);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      text-align: center;
+      height: calc(100% - var(--thick) * 2);
+      width: calc(100% - var(--thick) * 2);
+      background-color: var(--bg-color);
+      outline: 1px solid var(--bg-color-outline);
+    }
+    &-text:hover {
+      background-color: var(--background-color-hover);
+    }
+  }
+
+  /* Element  */
+  &__footer {
+    max-width: calc(var(--size) * 3 - var(--thick));
+    padding: 5px;
+  }
+
+  /* Modifier  */
+  &--size-small {
+    --scale: 0.8;
+    --margin: -18px;
+  }
+  &--size-medium {
+    --scale: 0.9;
+    --margin: -9px;
+  }
+  &--size-large {
+    --scale: 1.1;
+    --margin: 9px;
+  }
+  &--disabled {
+    --cursor: not-allowed;
+  }
+  &--clickable {
+    --cursor: pointer;
+    --background-color-hover: #{$color-content};
+  }
+  &--connector {
+    --opacity-connector: 1;
+    --margin-connector: var(--thick);
+  }
+  &--reverse {
+    --rotate: 180deg;
+    --transform-connector: translate(-100%, 0%) rotateX(180deg);
+    --left-connector: var(--thick);
+  }
+}
