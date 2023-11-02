@@ -11,19 +11,12 @@ div {
     }
 }
 
-p {
-    color: $color-brand;
-
-    &:hover {
-        color: $color-white;
-    }
-}
-
 .intro {
     @include width-limit;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: $unit-medium;
+    margin-top: $unit-xlarge;
 }
 
 figure {
@@ -34,17 +27,20 @@ figure {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
+    margin-bottom: -100px;
+
 }
 
 .quote {
     background: $color-brand;
     color: white;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+    @include siteGutter;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 
     div {
-        @include siteGutter;
+        @include width-limit;
+        grid-column-start: 2;
         margin: $unit-xlarge auto 100px;
     }
     

@@ -1,6 +1,5 @@
 import Navbar from '../components/Navigation/Navbar';
 import Header from '../components/Header/Header';
-import BigNav from '../components/Navigation/BigNav';
 import styles from './index.scss';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
@@ -15,16 +14,13 @@ const Home = () => {
       <Header />
 
       <section className="intro">
-        <h1>Test: {t('title')}</h1>
 
         <figure></figure>
         <div>
-          <h1>CAREER ZONES</h1>
+        <h1>{t('HomeTitle')}</h1>
           <h2>WHAT'S IT ABOUT?</h2>
-          <h4>
-            DIFFERENT PEOPLE WANT DIFFERENT THINGS FROM THEIR CAREER AND WE EMBRACE THE VARIETY OF
-            SKILLS WE HAVE HERE IN INTERNATIONAL SPORTS
-          </h4>
+          <h4>DIFFERENT PEOPLE WANT DIFFERENT THINGS FROM THEIR CAREER AND WE EMBRACE THE VARIETY OF
+            SKILLS WE HAVE HERE IN INTERNATIONAL SPORTS</h4>
           <p>
             <strong>
               IT's YOUR CAREER. Your development is what you make it. Ready to Make Your Play? Then

@@ -11,6 +11,7 @@
   --scale: 1;
   --margin: 0;
   --opacity: 1;
+  --cursor: default;
 
   scale: var(--scale);
   margin: var(--margin);
@@ -21,6 +22,7 @@
   height: calc(var(--size) * 3);
   width: calc(var(--size) * 3);
   background-color: $color-white;
+  cursor: var(--cursor);
 
   /* Element  */
   &__content {
@@ -68,7 +70,11 @@
     --scale: 0.7;
     --margin: -45px;
   }
+  &--cursor {
+    --cursor: pointer;
+  }
   &--disabled {
     --opacity: 0.5;
+    --cursor: not-allowed;
   }
 }

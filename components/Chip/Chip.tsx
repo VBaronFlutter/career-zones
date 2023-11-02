@@ -9,6 +9,7 @@ interface ChipProps {
   disabled?: boolean;
   /* Array of clickable items - clockwise direction */
   onClicks?: [() => void, () => void, () => void, () => void];
+  onClick?: () => void;
   rotate?: -5 | 5 | 10 | -10;
   size?: 'xx-small' | 'x-small' | 'small' | 'medium' | 'large';
   type?: 'primary' | 'secondary';
@@ -25,7 +26,8 @@ const Chip: React.FC<ChipProps> = ({
   disabled,
   size = 'medium',
   rotate,
-  onClicks = []
+  onClicks = [],
+  onClick
 }) => {
   const [onClickTop, onClickRight, onClickBottom, onClickLeft] = onClicks;
   return (
@@ -35,8 +37,10 @@ const Chip: React.FC<ChipProps> = ({
         className={classnames('chip', {
           [`chip--rotate-${rotate}`]: !!rotate,
           [`chip--size-${size}`]: !!size,
-          ['chip--disabled']: disabled
+          ['chip--disabled']: disabled,
+          ['chip--cursor']: onClick
         })}
+        onClick={onClick}
       >
         <div className="chip__content">
           <div className="chip__content-box">

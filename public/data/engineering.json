@@ -1,75 +1,196 @@
-{
-  "title": "Software Engineering",
-  "description": "",
-  "levels": [
-    {
-      "scope": [
-        "Software engineer at the beginning of their career.",
-        "May require some theoretical or specialised functional knowledge.",
-        "Might have no prior functional experience but can demonstrate passion and learning capabilities.",
-        "Works as part of a dedicated project squad."
-      ],
-      "focusAreas": [
-        "Develops understanding of agile methodologies and focuses on improving technology skills associated with the day-to-day squad work.",
-        "Learns to write high quality code following appropriate guidance and training materials",
-        "Implements well-defined/well understood stories or bug fixes",
-        "Able to use source control and related workflows effectively",
-        "Able to use appropriate debugging tools effectively to increase productivity and investigation skills",
-        "Ensure code meets business requirements",
-        "Uses suitable testing techniques",
-        "Establishes first Personal Development Plan (PDP)",
-        "Delivers assigned tasks",
-        "Independently works on small/low-impact/well-defined tasks",
-        "Follows delegated tasks well",
-        "Embraces Agile/Lean principles to deliver value often",
-        "Fixes documentation",
-        "Asks questions and actions feedback when pairing",
-        "Writes PR descriptions that provide basic context for the change",
-        "Seeks guidance from others, rather than answers",
-        "Embraces peer feedback"
-      ],
-      "model": {
-        "seventy": ["seventy One", "seventy Two", "seventy Three"],
-        "twenty": ["twenty One", "twenty Two", "twenty Three"],
-        "ten": ["ten One", "ten Two", "ten Three"]
-      }
-    },
-    {
-      "scope": [
-        "Established contributor, can analyse and solve routine queries and challenges with little oversight",
-        "Applies own judgement and experience when dealing with problems without clear precedent.",
-        "Has good understanding of existing procedures and processes and is able to escalate problems as appropriate within the team.",
-        "Builds relationships with engineers from related squads."
-      ],
-      "focusAreas": [
-        "Actively understands our SDLC and contributes to all aspects of it. Appropriately uses software and architectural design, driving towards industry standard patterns. ",
-        "Is conscious of technical debt and the impact of not effectively managing it. ",
-        "Starts focusing on NFRs of their work.",
-        "Uses appropriate data structures to solve problems",
-        "Writes comprehensive automated and unit tests",
-        "Assists on the design of new features and componentsIntegrates services together",
-        "Considers error handling appropriately",
-        "Proactively stays up-to-date with the latest engineering trendsImplements a varying complexity of stories/bug fixes",
-        "Participate in code reviews",
-        "Considers the maintainability of their code",
-        "Delivers assigned tasks that meet acceptance criteria",
-        "Attempts to unblock themselves before seeking help",
-        "Delivers small, well defined projects",
-        "Be adept at root cause analysisContributes to technical documentation",
-        "Contributes to tooling/application quality/coding standards",
-        "Demonstrates a deep technical understanding of the services they own",
-        "Writes PR descriptions that provide context and provide rationale for significant decisions",
-        "Participates in technical discussions with the team"
-      ],
-      "model": {
-        "seventy": [
-          "Designs, codes, verifies, tests, documents, amends and refactors simple programs/scripts. Applies agreed standards and tools, to achieve a well-engineered result. Reviews own work.",
-          "Creates and documents detailed designs for simple software applications or components applying agreed modelling techniques, standards, patterns and tools. Contributes to the design of components of larger software systems. Reviews own work.",
-          "Defines test conditions for given requirements. Designs test cases and creates test scripts and supporting data, working to the specifications provided. Interprets, executes and records test cases in accordance with project test plans. Analyses and reports test activities and results. Identifies and reports issues and risks."
+[
+  {
+    "title": "Software Engineering",
+    "description": "Craft is your bread and butter, it's what you trained as and what you're known for. Being a Software Engineer means navigating the dynamic world of technology with a unique blend of creativity, problem-solving, and precision. Translating complex ideas into practical solutions, writing lines of code that bring concepts to life. You're constantly adapting to evolving technologies and are driven by a passion for innovation, and often serve as the bridge between technical complexity and user-friendly experiences.",
+    "levels": [
+      {
+        "title": "Software Eingineer",
+        "zone": "ic",
+        "summary": "Leads Self",
+        "scope": [
+          "You are a valuable contributor to the Tribe's mission, consistently performing daily duties and specialized activities within a clearly defined environment. You achieve tangible results through personal efforts and applied skill set, while also demonstrating a strong commitment to collaboration and adaptability, all while upholding the organisation's core values. Additionally, you remain attuned to the ever-changing trends and demands within the industry, embracing challenges as opportunities for growth. You actively engage in understanding and contributing to the Software Development Life Cycle (SDLC) in all its facets. Your expertise extends to using software and architectural design principles in alignment with industry standards, while also conscientiously address technical debt and recognize its potential impact. Furthermore, you prioritise focusing on non-functional requirements (NFRs) within your work, contributing to a holistic approach to software development and delivery."
         ],
-        "twenty": ["twenty One", "twenty Two", "twenty Three"],
-        "ten": ["ten One", "ten Two", "ten Three"]
+        "focusAreas": [
+          "Uses appropriate data structures to solve problems.",  
+          "Writes comprehensive automated and unit tests.", 
+          "Assists on the design of new features and components.",  
+          "Integrates services together.",  
+          "Considers error handling appropriately.",  
+          "Proactively stays up to date with the latest engineering trends.", 
+          "Implements a varying complexity of stories/bug fixes.",  
+          "Participate in code reviews.", 
+          "Considers the maintainability of their code.", 
+          "Delivers assigned tasks that meet acceptance criteria.", 
+          "Attempts to unblock themselves before seeking help.",  
+          "Delivers small, well-defined projects.", 
+          "Be adept at root cause analysis.", 
+          "Contributes to technical documentation.",  
+          "Contributes to tooling/application quality/coding standards.", 
+          "Demonstrates a deep technical understanding of the services they own.",  
+          "Analysing test results on database impacts, errors or bugs, and usability.", 
+          "Participates in technical discussions with the team, present demos and answer questions at the end of a sprint."
+        ]
+      },
+      {
+        "title": "Senior Software Engineer",
+        "zone": "ic",
+        "summary": "Expert / Specialist",
+        "scope": [
+          "You are a problem-solving specialist who approaches complex issues with a fresh perspective, often uncovering innovative solutions. You possess a strong foundation in your specialized field, continuously enhancing your knowledge and expertise. Within squad, you play an active role in advocating for high-quality work and contribute to the growth and development of your team members through formal coaching or mentoring. Your technical proficiency extends to being recognized as an expert in a particular programming language or domain. Moreover, you are in the process of expanding your knowledge to encompass non-functional requirements (NFRs) while focusing on guiding junior team members in considering the broader impacts of their work. Additionally, you engage more actively with their community or professional environment, further broadening you knowledge and expertise within your field."
+        ],
+        "focusAreas": [
+          "Actively follows and appraises new technology for suitability and potential.",
+          "Defines and reviews quality standards.",
+          "Champions peer review.",
+          "Implements non-trivial components and distributed systems consisting of multiple interacting services.",
+          "Champions resolution of technical debt.",
+          "Proactively identifies and addresses problems in application quality and tools.",
+          "Investigates and fixes complex bugs.",
+          "Considers metrics when developing and uses appropriate services to check quality levels.",
+          "Plays a key role in technical elaboration.",
+          "Demonstrates understanding of CI/CD processes.",
+          "Solves small scope not-well-defined problems.",
+          "Helps non-technical stakeholders to understand and consider technical considerations.",
+          "Identifies deficiencies in the development processes and supports activities to improve them.",
+          "Participates in technical and non-technical discussions within and outside the squad."
+        ]
+      },
+      {
+        "title": "Lead Software Engineer",
+        "zone": "pl",
+        "summary": "Leads individuals",
+        "scope": [
+          "You serve as a dedicated people manager, primarily within a squad, where you take on formal management responsibilities for team members and prioritize the overall well-being of the team. You maintain a strong focus on delivering high-quality work by establishing strategic short-term goals for the team and promoting your team members' personal development. Your role entails close collaboration with other disciplines to ensure the timely shipment of quality features. Additionally, you may extend your expertise by mentoring individuals from closely related teams. You actively foster an environment of inclusivity and diverse perspectives, facilitating open discussions within your team to ensure that all team members have the opportunity to express their viewpoints and be heard, aligning discussion outcomes with stated goals. Furthermore, you play a pivotal role in the architectural and software design aspects of systems within your team, advocating for the development of quality software while leveraging your position within the software community to drive continuous improvement in the systems you help build."
+        ],
+        "focusAreas": [
+          "Owns the technical output of their squad.",
+          "Contributes to defining target software architecture.",
+          "Produces technical designs that include a consideration of scalability.",
+          "Plays a key role in the inception phase of a project.",
+          "Collaborates with various stakeholders in the inception of work.",
+          "Contributes to scaling engineering hiring (e.g. assist with interviews).",
+          "Mediates debates and discussions.",
+          "Allocates work to the squad.",
+          "Persistent in justifying technical debt in priority calls.",
+          "Instils engineering principles in other engineers.",
+          "Play the role of technical stakeholder when planning items of work.",
+          "Own the technical documentation on behalf of the squad.",
+          "Clears blockers for junior team members, provides context/guidance, or knows how to escalate.",
+          "Represents squad in external meetings.",
+          "Proactively gives feedback 'upwards' and to people they interact with who are not in their team.",
+          "Helps people in non-technical roles understand technical constraints/trade-offs.",
+          "Shares technical context and direction for less experienced engineers.",
+          "Helps other people develop themselves and regularly gives insightful, useful feedback to those around them.",
+          "Helps the growth of engineers around them through coaching and mentoring.",
+          "Helps their squad work together more effectively.",
+          "Fosters effective collaboration in multi-disciplinary squads.",
+          "Finds learning opportunities for others when reviewing their code and follows it up."
+        ]
+      },
+      {
+        "title": "Principal Software Engineer",
+        "zone": "ic",
+        "summary": "Lead Expert",
+        "scope": [
+          "You are a seasoned expert with a wide-ranging and in-depth knowledge base, displaying a proactive approach in tackling complex problems. You hold the distinction of being a subject matter expert in your respective domain, collaborating with multiple squads to provide valuable insights and solutions. Your role is transitioning from that of a direct contributor to that of a multiplier, as you actively build and maintain a robust network with other Specialists, Experts, and Lead Experts. You extend your expertise by mentoring and coaching several Specialists or Experts, actively contributing to the advancement of the channel's technical proficiency. You remain closely attuned to both internal and external technology trends, leveraging your knowledge and experience to enhance our software design. You champion non-functional requirements (NFRs), DevOps practices, and the full Software Development Life Cycle (SDLC), recognizing their significance. Additionally, You share your extensive experience through Communities of Practice (CoPs) and actively promote a culture of learning and development within your sphere of influence."
+        ],
+        "focusAreas": [
+          "Writes code that serves as a definitive example for new engineers.",
+          "Owns the technical vision for their specialty / domain.",
+          "Leads on non-functional quality.",
+          "Owns technical decisions with high risk and low reversibility.",
+          "Ensures new developments are engineered in keeping with blueprints.",
+          "Evangelizes best practice across the business.",
+          "Champions change in pursuit of better technology, services and standards.",
+          "Explains all aspects of the platform to new engineers.",
+          "Maintains blueprint and target architecture documentation with solution architects.",
+          "Shapes the direction of system designs with less experienced engineers.",
+          "Transparent in making design and technical decisions.",
+          "Gets buy-in on technical decision-making and proposed designs.",
+          "Mediates debates and discussions on tech choices Is a subject matter expert.",
+          "Maintains an expert profile in their field.",
+          "Positively influences engineers in the wider organisation."
+        ]
+      },
+      {
+        "title": "Engineering Manager",
+        "zone": "pl",
+        "summary": "Lead Expert",
+        "scope": [
+          "You assume a prominent leadership role, overseeing leaders from both Career Zones. You actively contribute to policy development and establish quality standards, diligently ensuring they are met. You play a pivotal role in shaping the development and execution of strategic plans for a sub-function, holding accountability for the performance and outcomes of the teams within your sphere of responsibility. Your leadership extends to creating opportunities for team growth through recruitment, succession planning, and the formulation of personal development plans. Furthermore, you foster an inclusive environment that values diverse perspectives, skilfully facilitating discussions within your team to ensure that every member has an opportunity to express their views and be heard. You work to align discussion outcomes with stated goals, encouraging active participation from quieter team members and preventing any individual from dominating the conversation."
+        ],
+        "focusAreas": [
+          "Lead a strong group of highly motivated engineers at all levels.",
+          "Manage skills gaps and ensure we have balanced teams, fit to deliver against business objectives.",
+          "Develop & motivate those in your team by providing clear direction, opportunities for learning & direct coaching.",
+          "Proactively manage any individual performance.",
+          "Define and maintain team structure aligned to tribe strategy.",
+          "Evangelise & prioritise engineering best practice in your squads.",
+          "Take responsibility for managing technical debt.",
+          "Input into framework & language choice, development build and deployment tooling.",
+          "Responsible for adherence to the Tribe's technology principles and SDLC in the context of our wider compliance requirements.",
+          "Ensure we deliver high-quality engineering solutions with the right balance between delivery speed vs operational risk.",
+          "With the Ops Manager, design and implement relevant support processes for the team's services.  ",
+          "Ensure we provide technical expertise in incident management, root cause analysis and post-incident decisions.",
+          "Constantly seek to make our engineering better: the skills and expertise of the team, improving delivery predictability and speed, operational awareness and responsibility. ",
+          "Highlight engineering risks and improvement benefits.",
+          "Work with the wider tribe leadership to plan and manage deliveries and report against progress toward our vision and objectives."
+        ]
+      },
+      {
+        "title": "Senior Principal Software Engineer",
+        "zone": "ic",
+        "summary": "Thought Leader",
+        "scope": [
+          "You stand out as a thought leader with specialized expertise, taking the lead on initiatives spanning your sub-function and collaborating seamlessly with other sub-functions to address intricate challenges and uncover innovative solutions. You achieve critical business objectives by orchestrating small teams of functional experts, while playing a pivotal role in setting the vision for your discipline and effectively disseminating your ideas through written communication, presentations, and direct engagement. Your visible presence within the organization cements your reputation as a thought leader in your specialized field. As a community champion, you deeply understand the value of cohesive teams and thriving technical communities, recognizing the importance of humility, clear vision, and guidance in nurturing these communities to excel. You also play a central role in ensuring timely and high-quality delivery, optimizing the value derived from technology choices. Additionally, you hold a key position in strategic decision-making, steering the organization toward the right technology goals while maintaining a sharp commercial acumen."
+        ],
+        "focusAreas": [
+          "Provide overall technical authority to our squads.",
+          "Support and develop the technical leaders in your area.",
+          "Champions change in pursuit of better technology, services and standards.",
+          "Establish meaningful and effective relationships within and outside your area such that our tribe and organisational goals can be achieved.",
+          "Establish and maintain a clear strategic vision and direction.",
+          "Builds systems that serve as a definitive example for engineers.",
+          "Be a disciplined custodian of the software design of our products.",
+          "Support Solution Architects in designing technical solutions.",
+          "Advocate and evangelise engineering best practice.",
+          "Owns and champions technical decisions with high risk, low reversibility and large impact.",
+          "Transparent in making design and technical decisions.",
+          "Gets buy-in on technical decision-making and proposed designs.",
+          "Mediates debates and discussions on tech choices Is a subject matter expert.",
+          "Maintains an expert profile in their field Positively influences engineers in the wider organisation."
+        ]
+      },
+      {
+        "title": "Head of Engineering",
+        "zone": "pl",
+        "summary": "Leads a Sub Function",
+        "scope": [
+          "You assume a position of shared leadership and bears accountability for a significant sub-function within the organization. You are entrusted with setting the strategic direction for this sub-function, ensuring alignment with the broader organizational strategy. Your role is pivotal in coordinating stakeholders and effectively leading teams to implement the chosen strategy. You achieve your objectives by working through a combination of people leaders and individual contributors. In your communication with the team, you consistently convey the overarching technology strategy and other pertinent topics. You lead by example, fostering a culture of idea-sharing and demonstrating a deep passion for your work. Your adeptness in managing change and charting a path forward further solidifies your leadership and your role in guiding the organization toward success."
+        ],
+        "focusAreas": [
+          "Leverages how the methodology, the technology and the people mix to deliver value for strategic gain.",
+          "Defines engineering strategy.",
+          "People management at scale.",
+          "Leads organisational change.",
+          "Influences change at sub-function level.",
+          "Delegates in a way that allows the organisation to operate effectively without dependence on themselves.",
+          "Creates strategic leads.",
+          "Strategic decision maker. Weighs the overall team and organisational needs against decisions.",
+          "Leads teams where value and quality are central to all decisions and activity.",
+          "Holds a clear vision of what good looks like for their squads and engineers.",
+          "Helps groups of squads work together more effectively.",
+          "Uses strategic know how to continuously improve team performance against delivery objectives.",
+          "Understands how to run an effective organisation.",
+          "Represents their sub-functions needs to senior stakeholders.",
+          "Leads teams that own their performance objectives and communicate these with the wider organisation.",
+          "Effective at balancing the academic need for standard ways of working against day-to-day issues and challenges.",
+          "Understands how to balance work, teams, resources to an optimal way of working.",
+          "Own organisation level risks.",
+          "Define a consistent PDP Framework.",
+          "Introduce/build new tooling to be able to support engineers in their development."
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
+]

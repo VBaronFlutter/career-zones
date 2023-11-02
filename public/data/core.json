@@ -4,39 +4,71 @@
     "description": "We establish close relationships with our stakeholders, underpinned by trust, integrity and respect. We can build awareness, understanding and positive momentum behind the International Sports Strategy, often without asserting authority.",
     "levels": [
       {
+        "summary": "Leads Self",
         "scope": [
-          "Is a team player. Communicates effectively in an audience-oriented way, in written and verbal form. Seeks out mentorship to grow their own experience. Not always successful in getting others to support efforts aligned to the strategy for International Sports."
+          "You display several key qualities that contribute to the effectiveness within the team and are a dedicated team player, consistently collaborating and working harmoniously with your colleagues. Your communication skills are highly effective, allowing you to convey information clearly and engage effectively with others. You actively seek opportunities to gain valuable experience by working with others demonstrating your commitment to personal and professional growth. You are also keenly aware of the relevant stakeholders in your sphere of influence, recognising the importance of building connections and relationships beyond your immediate team."
         ],
-        "focusAreas": ["People 1 area 1", "People 1 area 2", "People 1 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Is a team player.",
+          "Communicates effectively.",
+          "Works with a mentor to gain experience.",
+          "Is aware of relevant stakeholders."
+        ]
       },
       {
+        "summary": "Leads individuals / Expert / Specialist",
         "scope": [
-          "Is a team player. Develops relationships with some but not all relevant stakeholders. Communicates effectively in written and verbal subjects in an audience-oriented way. Actively listens to others and ensures they are understood. Mentors within own team. Seeks out opportunities to contribute towards retention/ succession planning. Seeks out mentorship to grow their own experience."
+          "You excel as a team player, fostering collaboration and synergy among colleagues. Your communication skills are top-notch, enabling you to convey ideas clearly and concisely and actively engage in listening to truly comprehend others' perspectives. Your commitment to personal growth is evident through a willingness to work with a mentor, thereby gaining valuable experience and knowledge. Equally noteworthy is your role as a mentor within your own team, sharing insights and fostering growth among peers. You also prioritise the development of relationships with relevant stakeholders, recognising the importance of connections beyond your immediate team. You also play a significant role in contributing to retention, succession planning, and recruitment efforts, demonstrating your dedication to the long-term success of the organization."
         ],
-        "focusAreas": ["People 2 area 1", "People 2 area 2", "People 2 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Communicates effectively.",
+          "Actively listens to understand.",
+          "Works with a mentor to gain experience.",
+          "Mentors within own team.",
+          "Develops relationships with relevant stakeholders.",
+          "Contribute to retention and succession planning and recruitment."
+        ]
       },
       {
+        "summary": "Leads Leaders / Lead Expert",
         "scope": [
-          "Is a team player. Maintains close relationships with all relevant stakeholders and is able to leverage them to draw support towards the International Sports strategy. Communicates effectively with a diverse set of teams. Applies active listening. Seeks mentoring opportunities for themselves by fostering a culture of mentoring and supports others in their growth as mentors."
+          "You are a true team player, consistently working collaboratively and contributing to group efforts. Your effective communication skills enable you to convey ideas and information clearly and persuasively and you actively engage in active listening, demonstrating a genuine interest in understanding others' perspectives and feedback. Building strong relationships with relevant stakeholders is a core strength of yours, recognising the importance of connections beyond your immediate team leveraging your influence to garner support for various objectives, showcasing your ability to drive initiatives forward. You actively foster a culture of mentoring within the organization, whilst provide support and guidance to others on their journey as a mentor, emphasizing your commitment to personal and professional growth across the team."
         ],
-        "focusAreas": ["People 3 area 1", "People 3 area 2", "People 3 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Is a team player.",
+          "Communicates effectively.",
+          "Applies active listening.",
+          "Develops strong relationships with relevant stakeholders.",
+          "Leverages influence to draw support to objectives.",
+          "Fostering a culture of mentoring and supports others in their growth as mentors."
+        ]
       },
       {
+        "summary": "Leads a Sub Function / Thought Leader",
         "scope": [
-          "Inspires, gains trust, respect and support of others. Developed strong relationships with all relevant stakeholders. Effective in promoting a wider understanding of our strategic initiatives. Communicates purpose and direction with respect, clarity and enthusiasm. Pays attention to non-verbal communication. Fostering a culture of Cross organization mentoring by seeking opportunities for themselves and others."
+          "This person possesses a remarkable set of qualities that have a significant impact within any organization. They have a unique ability to inspire, earning the trust, respect, and support of their colleagues. Their communication skills are truly exceptional; they convey purpose and direction with unwavering clarity and enthusiasm. Furthermore, they have cultivated strong relationships with all the pertinent stakeholders, ensuring a broad understanding of strategic initiatives. Their attention to non-verbal cues adds an extra layer of effectiveness to their communication. Moreover, they actively cultivate a culture of cross-organizational mentoring, fostering growth and development throughout the entire organization. In sum, their blend of leadership, communication prowess, relationship-building, and mentorship efforts make them an invaluable asset to their team and the organization as a whole."
         ],
-        "focusAreas": ["People 4 area 1", "People 4 area 2", "People 4 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Inspires, gains trust, respect and support of others.",
+          "Expert communicator conveying purpose and direction with respect, clarity and enthusiasm.",
+          "Has developed strong relationships with all relevant stakeholders.",
+          "Promoting wider understanding of strategicinitiatives.",
+          "Pays attention to non-verbal communication.",
+          "Fostering a culture of cross-organisational mentoring."
+        ]
       },
       {
+        "summary": "Leads a Function",
         "scope": [
-          "Role model of collaborative leadership. Has the art and flare to influence. Inspires, gains trust, respect and support of others. Ensure an infrastructure to support varied communication methods which are cost effective and keep up with advances in technology. Fosters a culture of concise, effective, audience-oriented communication."
+          "You embody the essence of collaborative leadership, serving as a role model for others in the organization. You possess a remarkable talent for influencing and inspiring those around you, garnering trust, respect, and unwavering support. Moreover, you demonstrate a keen awareness of the importance of modern communication methods, ensuring a cost-effective infrastructure that keeps pace with technological advancements. Additionally, you actively promote a culture of clear, concise, and audience-oriented communication, emphasizing the importance of delivering messages effectively to reach your intended audience. In sum, your leadership, influencing abilities, commitment to effective communication, and forward-thinking approach to technology makes you an invaluable asset to the tribe."
         ],
-        "focusAreas": ["People 5 area 1", "People 5 area 2", "People 5 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Role model for collaborative leadership.",
+          "Has the art and flare to influence.",
+          "Inspires, gains trust, respect and support of others.",
+          "Ensure an infrastructure to support varied communication methods which are cost effective and keep up with advances in technology.",
+          "Fosters a culture of concise, effective, audience-oriented communication."
+        ]
       }
     ]
   },
@@ -45,39 +77,68 @@
     "description": "We are impartial and unbiased, ensuring equal treatment for all and that decisions taken are based on objective criteria. Puts the business at the heart of everything we do. We foster a collaborative working environment on shared goals that align towards the achievement of the Group strategy.",
     "levels": [
       {
+        "summary": "Leads Self",
         "scope": [
-          "Works to build strong relationships with teammates and manager. Learns to embrace professionalism, work ethics, mutual respect for colleagues. Understands the importance of security and potential implications. Value difference, diversity and inclusion, ensuring fairness and opportunity for all. Makes an effort to remain impartial when considering perspectives."
+          "You look to foster a harmonious work environment by establishing robust connections with both team members and stakeholders. You embody professionalism and uphold strong work ethics, consistently demonstrating mutual respect for your colleagues while holding a deep understanding of the significance of security in your work. Your commitment to diversity and inclusion is evident, as you prioritize fairness and create opportunities for all individuals. Additionally, you maintain impartiality when evaluating various perspectives, ensuring a balanced and equitable approach in your interactions and decision-making. In summary, your dedication to relationships, professionalism, security, diversity, and impartiality collectively contribute to a positive and inclusive workplace atmosphere."
         ],
-        "focusAreas": ["Culture 1 area 1", "Culture 1 area 2", "Culture 1 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Builds strong relationships with team mates and manager.",
+          "Embraces professionalism, work ethics and mutual respect for colleagues.",
+          "Understands the importance of security.",
+          "Values diversity and inclusion, ensuring fairness and opportunity for all.",
+          "Remain impartial when considering different perspectives."
+        ]
       },
       {
+        "summary": "Leads individuals / Expert / Specialist",
         "scope": [
-          "Build strong relationships with business counterparts, manager and team. Approaches all work with a security lens and actively looks for security vulnerabilities. Value difference, diversity and inclusion, ensuring fairness and opportunity for all. Does not always define criteria in advance of making recommendations or decisions. Is not always effective in engaging all relevant parties."
+          "You excel in various aspects of your professional life, adept at building robust relationships not only with your teammates and managers but also with your business counterparts, creating a network of trust and collaboration. Your commitment to security is evident as you approach all tasks with a vigilant security lens, proactively seeking out vulnerabilities. You hold diversity and inclusion in high regard, always striving for fairness and equal opportunities for everyone. In your decision-making process, you prioritize clarity by defining criteria in advance, ensuring well-informed recommendations and choices. Moreover, you go the extra mile to engage all relevant parties effectively, emphasizing your dedication to inclusive and comprehensive communication. Your proficiency in relationship-building, security awareness, commitment to diversity, strategic decision-making, and inclusive engagement make you a valuable asset in any professional setting."
         ],
-        "focusAreas": ["Culture 2 area 1", "Culture 2 area 2", "Culture 2 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Builds strong relationships with teammates, managers and business counterparts.",
+          "Approaches all work with a security lens and actively looks for security vulnerabilities.",
+          "Values difference, diversity and inclusion, ensuring fairness and opportunity for all.",
+          "Looks to define criteria in advance of making a recommendation or decision.",
+          "Endeavours to be effective in engaging all relevant parties."
+        ]
       },
       {
+        "summary": "Leads Leaders / Lead Expert",
         "scope": [
-          "Build and improve strong relationships with across business counterparts and manager to better position the team. Fosters a security first mindset across those teams, leading by example. Value difference, diversity and inclusion, ensuring fairness and opportunity for all. Able to act with impartiality and remain fair in all situations. Often defines criteria and identifies all relevant perspectives before making a recommendation or decision."
+          "You excel in multiple facets of their professional role, skilled at forging robust relationships with business counterparts, strategically enhancing your team's positioning and collaboration. You actively champion a security-first mindset, instilling a culture of vigilance and awareness across teams. Your dedication to diversity and inclusion is unwavering, ensuring equitable treatment and opportunities for all individuals. You consistently demonstrate impartiality and fairness in every situation, earning the trust and respect of your peers. Additionally, you prioritize clarity and comprehensive decision-making by frequently defining criteria and considering relevant perspectives before offering recommendations or making decisions. Your proficiency in relationship-building, security advocacy, commitment to diversity, impartiality, and strategic decision-making collectively contribute to your valuable contributions within your professional environment."
         ],
-        "focusAreas": ["Culture 3 area 1", "Culture 3 area 2", "Culture 3 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Builds strong relationships with business counterparts to better position the team.",
+          "Promotes a security first mindset across teams.",
+          "Values difference, diversity and inclusion, ensuring fairness and opportunity for all.",
+          "Acts impartiality and remains fair in all situations.",
+          "Often defines criteria and identifies relevant perspectives before making a recommendation or decision."
+        ]
       },
       {
+        "summary": "Leads a Sub Function / Thought Leader",
         "scope": [
-          "Maintains impartiality while dealing with people across different divisions and committed to hold others accountable. Applies a security first mindset across the organization, leading by example. Act as a role model for delivery by showing efficiency and focus, while being open to new ideas and honest about challenges. Drive an inclusive and collaborative working culture which values diversity and encourages, openness, approachability and sensitivity."
+          "You bring a wealth of valuable qualities to your role within the organization. You consistently maintain impartiality when collaborating with colleagues across various departments, ensuring fairness and objectivity in your interactions. You are unwavering in your commitment to holding others accountable, fostering a culture of responsibility and accountability. Moreover, you actively promote a security-first mindset throughout the organization, emphasizing the importance of vigilance and risk management. As a role model for delivery, you exemplify efficiency and focus in your work while remaining receptive to new ideas and transparent about challenges. You play a crucial role in driving an inclusive and collaborative working culture, placing a high value on diversity and encouraging an environment characterized by openness, approachability, and sensitivity. Your dedication to impartiality, accountability, security, efficiency, and inclusivity makes you a significant contributor to the organization's success and positive workplace culture."
         ],
-        "focusAreas": ["Culture 4 area 1", "Culture 4 area 2", "Culture 4 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Maintains impartiality while working with people across the organisation.",
+          "Is committed to holding others accountable.",
+          "Promotes a security first mindset across the organisation.",
+          "Is a role model for delivery, showing efficiency and focus, while being open to new ideas and honest about challenges.",
+          "Drivesan inclusive and collaborative working culture which values diversity and encourages openness, approachability and sensitivity."
+        ]
       },
       {
+        "summary": "Leads a Function",
         "scope": [
-          "Creates an environment where all perspectives are equally valued and all relevant people are encouraged to give their input. Builds strong relationships outside of the organisation -leverages these to position the business. Actively works with the security team to set and refine security strategy. Drive an inclusive and collaborative working culture which values diversity and encourages, openness, approachability and sensitivity."
+          "You excel in fostering a dynamic and inclusive work environment, creating a space where all perspectives are not only welcomed but highly valued, actively encouraging individuals to share their input and ideas. Beyond the organization, you excel at building robust external relationships, which you skilfully leverage to enhance the positioning and success of the business. You collaborate closely with the security team to establish and fine-tune the organization's security strategy, ensuring a comprehensive and proactive approach. Moreover, you play a pivotal role in driving an inclusive and collaborative workplace culture, placing a strong emphasis on diversity, openness, approachability, and sensitivity. Your ability to promote inclusivity, build external relationships, contribute to security strategy, and champion diversity makes you an invaluable asset to the organization's success and its positive work environment."
         ],
-        "focusAreas": ["Culture 5 area 1", "Culture 5 area 2", "Culture 5 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Creates an environment where all perspectives are valued and people are encouraged to give their input.",
+          "Builds strong relationships outside of the organisation and leverages these to effectively position the business.",
+          "Workswith the security team to set and refine security strategy.",
+          "Drives an inclusive and collaborative working culture which values diversity and encourages openness, approachability and sensitivity."
+        ]
       }
     ]
   },
@@ -86,80 +147,129 @@
     "description": "Is actively curious, produces new ideas that work and introduces new ways of looking at problems to be bigger, better and faster than before.",
     "levels": [
       {
+        "summary": "Leads Self",
         "scope": [
-          "Remains curious and generates new and useful ideas or solutions to solve challenges; is open to innovations and gets involved in unfamiliar tasks or new areas; learns new methods, tools and technologies and applies them to work."
+          "You embody a spirit of continuous growth and innovation. Maintaining a curious mindset, consistently generating creative and practical ideas and solutions to address challenges that arise. You display a genuine openness to innovation, willingly taking on unfamiliar tasks or venturing into new areas. Your commitment to learning is evident as you actively acquire and apply new methods, tools, and technologies, ensuring your skills and knowledge remain up-to-date. In summary, their curiosity, willingness to embrace innovation, and dedication to learning contribute to their effectiveness in navigating a dynamic and ever-evolving professional landscape."
         ],
-        "focusAreas": ["Game Changer 1 area 1", "Game Changer 1 area 2", "Game Changer 1 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Remains curious and generates useful and creative ideas and solutions to solve challenges.",
+          "Is open to innovations and gets involved in unfamiliar tasks or new areas.",
+          "Learns and applies new methods, tools and technologies."
+        ]
       },
       {
+        "summary": "Leads individuals / Expert / Specialist",
         "scope": [
-          "Remains curious and produces useful or creative ideas that are new, better or unique; embraces change with an open-mind and an eagerness to try out new things; introduces new ways of looking at problems; uses initiative to explore and learn innovative methods, tools and technologies and applies them at work."
+          "You have a proactive and forward-thinking approach to your work, consistently demonstrate curiosity, generating creative and practical solutions to overcome challenges effectively. With an open-minded perspective, you readily embrace change and eagerly explore new approaches and ideas. You bring innovation to problem-solving by introducing fresh perspectives and creative angles. Additionally, you take the initiative to seek out and learn innovative methods, tools, and technologies, actively applying them in your work to enhance efficiency and productivity."
         ],
-        "focusAreas": ["Game Changer 2 area 1", "Game Changer 2 area 2", "Game Changer 2 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Remains curious and generates useful and creative ideas and solutions to solve challenges.",
+          "Embraces change with an open-mind and an eagerness to try out new things.",
+          "Introduces new ways of looking at problems.",
+          "Usesinitiative to explore and learn innovative methods, tools and technologies and applies them at work."
+        ]
       },
       {
+        "summary": "Leads Leaders / Lead Expert",
         "scope": [
-          "Models and encourages others to be curious, develop and explore innovative solutions and approaches to challenges by applying expertise and fresh thinking; champions change with an open-mind and an eagerness to try out new things; can take a creative idea and put it into practice."
+          "You are a catalyst for innovation within your team and organization. You inspire and encourage others to nurture their curiosity, develop their skills, and explore innovative solutions and approaches to challenges by sharing your own expertise and fresh thinking. You are a champion of change, approaching new ideas and endeavours with an open mind and an eagerness to embrace novelty. Moreover, you possess the practical ability to turn creative ideas into actionable solutions, translating vision into reality. Your leadership in fostering curiosity, championing change, and transforming creative concepts into tangible outcomes makes you a driving force in promoting innovation and growth within your professional sphere."
         ],
-        "focusAreas": ["Game Changer 3 area 1", "Game Changer 3 area 2", "Game Changer 3 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Encourages others to be curious, develop and explore innovative solutions and approaches to challenges by applying expertise and fresh thinking.",
+          "Champions change with an open mind and an eagerness to try out new things.",
+          "Can take a creative idea and put it into practice."
+        ]
       },
       {
+        "summary": "Leads a Sub Function / Thought Leader",
         "scope": [
-          "Takes smart organisational risks to drive game changing innovations; champions new initiatives and encourages others to find improved ways to tackle challenges; fosters an environment which nurtures diverse thinking to promote curiosity and nurture innovation."
+          "You are a driving force behind innovation and positive change within their organization, possessing a strategic mindset, willing to take calculated organizational risks to catalyse game-changing innovations. You lead by example, championing new initiatives and inspiring your colleagues to seek improved methods for addressing challenges. Furthermore, you actively cultivate an inclusive environment that values diverse perspectives, fostering curiosity and promoting innovation. Your willingness to take strategic risks, your leadership in championing new ideas, and dedication to fostering diverse thinking all contribute to your pivotal role in driving innovation and growth within your professional sphere."
         ],
-        "focusAreas": ["Game Changer 4 area 1", "Game Changer 4 area 2", "Game Changer 4 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Takes smart organisational risks to drive game changing innovations",
+          "Champions new initiatives and encourages others to find improved ways to tackle challenges",
+          "Fosters an environment which nurtures diverse thinking to promote curiosity and nurture innovation."
+        ]
       },
       {
+        "summary": "Leads a Function",
         "scope": [
-          "Takes smart organisational risks to drive game changing innovations; invests resources and inspires others to be curious, discover and implement new ideas and solutions; creates an environment where innovation is nurtured and rewarded; and actively removes barriers and practices that hinder creativity."
+          "You are the main driver for innovation within the organization, displaying a strategic mindset, willing to take calculated organizational risks that drive game-changing innovations. Not only do you invest your own resources, but you also inspire and motivate others to embrace curiosity and actively seek out, discover, and implement new ideas and solutions. You have created a work environment where innovation is not only encouraged but also recognized and rewarded, fostering a culture of continuous improvement. What truly sets you apart is your proactive approach to identifying and removing barriers and practices that may hinder creativity, ensuring that innovation flourishes unencumbered. In essence, your willingness to take strategic risks, resource investment, support for innovation, and commitment to eliminating barriers all contribute to your pivotal role in driving a culture of creativity and progress within your professional sphere."
         ],
-        "focusAreas": ["Game Changer 5 area 1", "Game Changer 5 area 2", "Game Changer 5 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Takes smart organisational risks to drive game changing innovations",
+          "Invests resources and inspires others to be curious, discover and implement new ideas and solutions",
+          "Creates an environment where innovation is nurtured and rewarded; and actively removes barriers and practices that hinder creativity."
+        ]
       }
     ]
   },
   {
     "title": "Results",
-    "description": "We appreciate different and opposing perspectives and are able to adapt our approach to achieve a successful outcome. Gets stuck in and is driven to achieve results at pace with high levels of energy, enthusiasm and integrity. Always delivers on what they have promised. Makes quality, long term and short-term decisions considering various inputs.",
+    "description": "We appreciate different and opposing perspectives and are able to adapt our approach to achieve a successful outcome. Gets stuck in and is driven to achieve results at pace with high levels of energy, enthusiasm, and integrity. Always delivers on what they have promised. Makes quality, long term and short-term decisions considering various inputs.",
     "levels": [
       {
+        "summary": "Leads Self",
         "scope": [
-          "Contributes to an effective peer review process. Takes pride in delivering quality work on time, striking the right balance between tackling issues under own initiative and escalating to senior colleagues for support. Dedicates time to personal development, completing required learning, courses and/or certifications."
+          "You contribute to an efficient peer review process that enhances the overall quality of work in the team. You take great pride in your work, consistently delivering high-quality results within established deadlines. You have a commendable sense of initiative, addressing challenges independently while also recognizing the importance of seeking guidance from senior colleagues when necessary. You also demonstrate a strong commitment to your personal and professional development, dedicating your personal time to complete required learning, courses, certifications, and actively participating in the peer review process."
         ],
-        "focusAreas": ["Results 1 area 1", "Results 1 area 2", "Results 1 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Contributes to an effective peer review process.",
+          "Takes pride in delivering quality work on time, striking the right balance between tackling issues under own initiative and escalating to senior colleagues for support.",
+          "Dedicates personal time to development, completing required learning, courses and/or certifications and peer review process."
+        ]
       },
       {
+        "summary": "Leads individuals / Expert / Specialist",
         "scope": [
-          "Monitors team health and output using reliable metrics and reports. Ensures alignment to governance, taking ownership of quality. Leads related community of practices and champions continuous learning and development. Leads and drives elaboration of new work. Actively manages new features vs product improvements."
+          "You play a pivotal role in team management and productivity, diligently monitor both the team's well-being and its output, relying on dependable metrics and reports to make informed decisions. You take ownership of quality by ensuring that the team remains aligned with governance standards, demonstrating a strong commitment to excellence. Additionally, you lead and nurture a community of practices, actively promoting continuous learning and development among team members. Your leadership extends to driving the elaboration of new work, guiding the team through the process of innovation and skilfully strike a balance between introducing new features and making product improvements, demonstrating a strategic approach to enhancing the overall product. Making you a driving force behind their team's success and development."
         ],
-        "focusAreas": ["Results 2 area 1", "Results 2 area 2", "Results 2 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Monitors team health and output using reliable metrics and reports.",
+          "Ensures alignment to governance, taking ownership of quality.",
+          "Leads related community of practices and champions continuous learning and development.",
+          "Leads and drives elaboration of new work.",
+          "Actively balances new features against product improvements."
+        ]
       },
       {
+        "summary": "Leads Leaders / Lead Expert",
         "scope": [
-          "Owns and implements the team's strategy. Drives team growth, recruitment and learning initiatives. Leads on cross tribe/squad initiatives and projects strategy. Understands other perspectives and is not hesitant to adapt an approach to achieve a successful outcome. Mostly effective in managing change through applying insights from others and lessons learned from others. Owns, drives and helps to define best practices and owns tribe wide risks. Visible in the wider business community, driving awareness of the brand."
+          "You are a proactive leader within your team, taking charge of various growth, recruitment, and learning initiatives to foster team development. You exhibit a remarkable ability to empathize with and understand different perspectives, readily adapting your approach to ensure successful outcomes. Your effective change management skills are evident as you leverage insights and lessons learned from others to navigate shifts within the organization. You take full ownership of defining best practices and assessing risks, contributing to a culture of continuous improvement. Furthermore, your visibility extends beyond the team, as you actively engage with the wider business community, playing a pivotal role in driving brand awareness. In summary, your leadership in team growth, adaptability, change management, best practices, and brand promotion collectively position you as a valuable asset and influencer within your professional sphere."
         ],
-        "focusAreas": ["Results 3 area 1", "Results 3 area 2", "Results 3 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Drives team growth, recruitment and learning initiatives.",
+          "Understands other perspectives and is not hesitant to adapt an approach to achieve a successful outcome.",
+          "Mostly effective in managing change through applying insights from others and lessons learned from others.",
+          "Owns, drives, and defines best practices and risks.",
+          "Visible in the wider business community, driving awareness of the brand."
+        ]
       },
       {
+        "summary": "Leads a Sub Function / Thought Leader",
         "scope": [
-          "Owns and implements the strategy for the divisional subfunction in alignment with the divisional goals and objectives. Achieves the strategy through alignment with senior managers and senior team members. Ensures alignment to group vision and sets out organisational vision to allow effective growth/hiring and learning of sub-function. Coordinates on complex inter tribe projects and initiatives."
+          "You hold a critical role within the organization owning and executing the strategy for the sub-function, ensuring that it aligns seamlessly with the broader divisional goals and objectives. Your success in implementing this strategy hinges on your adeptness at aligning with senior managers and senior team members, fostering collaboration and unity towards shared goals. You are an effective communicator, skilfully conveying the group's vision throughout the sub-function to drive the achievement of key results. Moreover, you play a pivotal role in co-ordinating complex inter-tribe projects and initiatives, facilitating cross-functional collaboration and ensuring the organization's collective success. In essence, your strategic leadership, alignment skills, effective communication, and project coordination expertise collectively contribute to your role as an influential leader within their organization."
         ],
-        "focusAreas": ["Results 4 area 1", "Results 4 area 2", "Results 4 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Owns and implements the strategy for the sub-function in alignment with the divisional goals and objectives.",
+          "Achieves the strategy through alignment with senior managers and senior team members.",
+          "Communicates group vision throughout the sub-function to achieve key results",
+          "Coordinates on complex inter tribe projects and initiatives."
+        ]
       },
       {
+        "summary": "Leads a Function",
         "scope": [
-          "Sets the vision and strategy in alignment with division and group objectives. Delivers multiple key big bets for the group through large divisional subfunctions. Reports progress to ExCo. Creates an environment where Results are curious and encourages Results to challenge and share views. Often learns and adapts an approach in order to achieve the best outcome. Manages change skilfully and shows a way forward."
+          "You hold a pivotal leadership position within the organization, responsible for setting a clear vision and strategy, ensuring it aligns seamlessly with the overarching objectives of the division and group. Your role extends to delivering significant, high-impact initiatives, often referred to as /\"big bets/\", through the effective coordination of sub-functions. You maintain a high level of transparency and accountability by reporting progress to the Executive Committee (ExCo). Furthermore, you cultivate a work environment characterized by curiosity and open dialogue, encouraging your team to challenge conventions and share diverse perspectives. Your commitment to continuous learning is evident as you adapt your approaches to achieve optimal outcomes. You also display exceptional change management skills, skilfully guiding your team through transitions and providing a clear path forward. Your strategic vision, effective leadership, transparency, commitment to fostering innovation, adaptability, and change management expertise make you a driving force in achieving both individual and organizational success."
         ],
-        "focusAreas": ["Results 5 area 1", "Results 5 area 2", "Results 5 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Sets the vision and strategy in alignment with division and group objectives.",
+          "Delivers multiple key big bets for the group through sub-functions.",
+          "Reports progress to ExCo.",
+          "Creates an environment where people are curious and encourages people to challenge and share views.",
+          "Learns and adapts an approach in order to achieve the best outcome.",
+          "Manages change skilfully and shows a way forward."
+        ]
       }
     ]
   },
@@ -168,39 +278,61 @@
     "description": "We think about the big picture and work effectively and in partnership with other divisions to achieve competitive advantage through greater agility, faster time to market and a better customer experience. Anticipates future trends and uses insights to impact business decisions. Understands the industry, customers, products and business.",
     "levels": [
       {
+        "summary": "Leads Self",
         "scope": [
-          "Supports our tribe strategy, helping to contribute where required. Has a clear awareness and understanding of our overall strategy."
+          "You actively contribute to the overall tribe strategy by making meaningful contributions at the squad level. You understand the key performance drivers, and although you seek guidance from your manager, you show a commendable willingness to learn and grow. Through your efforts at the squad level and commitment to understanding performance drivers, you play an integral part in advancing the tribe's strategic objectives."
         ],
-        "focusAreas": ["Direction 1 area 1", "Direction 1 area 2", "Direction 1 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Supports the tribe strategy through contributions at a squad level.",
+          "Demonstrates understanding of performance drivers with guidance from their manager."
+        ]
       },
       {
+        "summary": "Leads individuals / Expert / Specialist",
         "scope": [
-          "Advanced strategy support and/or execution being an expert within their field. Understands the business model in relation to current focus area, being able to see opportunities and simplify things. Participates in the creation of the team roadmap ensuing feedback. Simplifies tasks through proactive conversations."
+          "You demonstrates a deep understanding of the business model, particularly in relation to your current focus area. You possess the ability to identify opportunities and streamline processes, simplifying complex tasks to make them more manageable. Your active involvement in the creation of the team roadmap reflects your commitment to collaboration and incorporating feedback from your peers. Moreover, you excel in facilitating proactive conversations to simplify tasks and improve efficiency. Furthermore, your grasp of performance drivers highlights your dedication to contributing effectively to the team's success."
         ],
-        "focusAreas": ["Direction 2 area 1", "Direction 2 area 2", "Direction 2 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Understands the business model in relation to current focus area, being able to see opportunities and simplify things.",
+          "Participates in the creation of the team roadmap ensuing feedback.",
+          "Simplifies tasks through proactive conversations.",
+          "Demonstrates understanding of performance drivers."
+        ]
       },
       {
+        "summary": "Leads Leaders / Lead Expert",
         "scope": [
-          "Advanced strategic execution and support while innovating, mentoring and coaching while being an expert in their field. Actively seeks to create, redefine or update roadmaps across the organization, based on strategy & constraints. Helps to define & create new product abilities. Participates in the creation of the team roadmap ensuing feedback. Simplifies design through proactive conversations. Translates strategic plans while leading key projects."
+          "You play a pivotal role within the organization, taking charge of creating and continuously updating roadmaps that span across the entire organization. Your approach is rooted in a deep understanding of the organization's strategy, constraints, and feedback. You lead by example, fostering a culture of innovation, coaching, and constructive feedback within your team, thereby enhancing the collective knowledge and capabilities. You excel in simplifying complex design challenges through proactive and insightful conversations. Additionally, you are instrumental in defining and developing new product abilities, driving forward the organization's growth and adaptability."
         ],
-        "focusAreas": ["Direction 3 area 1", "Direction 3 area 2", "Direction 3 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Creates and update roadmaps across the organisation, based on strategy, constraints and feedback.",
+          "Leads by example and improves team knowledge through innovation, coaching and feedback.",
+          "Simplifies design through proactive conversations.",
+          "Defines and creates new product abilities."
+        ]
       },
       {
+        "summary": "Leads a Sub Function / Thought Leader",
         "scope": [
-          "Champions and grows the subfunction through set strategies, consistently working at a strategic level, influencing, owning and backing decisions to achieve set strategies. Fosters a culture across a subfunction of having conversations based on organizational strategy and principles to create alignment. Strongly oriented towards goals and ensures a subfunction are continuously working towards their goals. Raises awareness for how biases impact decisions and ensures accountability is practiced within their sub-function."
+          "You take on a crucial role in nurturing the growth of the sub-function, actively influence, take ownership, and support key decisions that set and drive the achievement of tribe goals and OKRs. Your leadership extends to fostering a culture of alignment and accountability, with conversations rooted in organizational strategy and principles. You maintain a strong focus on ensuring that the sub-function consistently progresses towards its objectives. Moreover, you play a significant role in raising awareness about the impact of bias on decision-making, highlighting the importance of fair and informed choices."
         ],
-        "focusAreas": ["Direction 4 area 1", "Direction 4 area 2", "Direction 4 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Grows the sub-function through influencing, owning and backing decisions to set and achieve goals.",
+          "Fosters a culture of alignment and accountability through conversations based on organisational strategy and principles.",
+          "Ensures the sub-function is continuously working towards its goals.",
+          "Raises awareness of how bias impacts decisions."
+        ]
       },
       {
+        "summary": "Leads a Function",
         "scope": [
-          "Provides holistic leadership. Refines and grows the business through set strategies, ensuring governance. Leads strategic decisions and plans with a thorough understanding of the entire business."
+          "You embody a comprehensive approach to leadership, providing holistic guidance to your organization. You play a pivotal role in refining and expanding the business, implementing carefully crafted strategies while maintaining a strong focus on governance. Your leadership is characterized by their ability to lead strategic decisions and plans with a deep understanding of the entire business landscape. Your insightful perspective and strategic acumen are instrumental in steering the organization towards its goals, making you an invaluable asset in shaping the future of the business."
         ],
-        "focusAreas": ["Direction 5 area 1", "Direction 5 area 2", "Direction 5 area 3"],
-        "examples": {}
+        "focusAreas": [
+          "Provides holistic leadership.",
+          "Refines and grows the businesst hrough set strategies, ensuring governance.",
+          "Leads strategic decisions and plans with a thorough understanding of the entire business."
+        ]
       }
     ]
   },
@@ -209,59 +341,56 @@
     "description": "We apply a strategic thinking lens and operate beyond the rules of competition, allowing previously unseen opportunities to be recognised. We remain aware of external trends in the global marketplace (political, economic, social or other) and analysing its potential impact on International Sports and its internal decision-making.",
     "levels": [
       {
+        "summary": "Leads Self",
         "scope": [
-          "Applies what they've learnt to optimise current plans. Is proactive in demonstrating with little input from their manager. Demonstrates understanding of performance drivers."
+          "You possesses a clear understanding of the overarching strategy of your tribe. You leverage this insight to great effect by actively applying your knowledge to refine and optimize current plans and initiatives. Your ability to bridge strategy with practical execution allows you to contribute effectively to the tribe's goals."
         ],
         "focusAreas": [
-          "Strategic Awareness 1 area 1",
-          "Strategic Awareness 1 area 2",
-          "Strategic Awareness 1 area 3"
-        ],
-        "examples": {}
+          "Has a clear understanding of the tribe's overall strategy.",
+          "Applies what they’ve learnt to optimise current plans."
+        ]
       },
       {
+        "summary": "Leads individuals / Expert / Specialist",
         "scope": [
-          "Can easily demonstrate & showcase understanding of performance drivers. Identifies, drives and executes growth opportunities."
+          "You play a pivotal role within your organization, offering advanced strategy support and execution. Your expertise is particularly valuable in identifying, propelling, and successfully executing growth opportunities. You contributions are instrumental in driving the organization's progress and strategic expansion."
         ],
         "focusAreas": [
-          "Strategic Awareness 2 area 1",
-          "Strategic Awareness 2 area 2",
-          "Strategic Awareness 2 area 3"
-        ],
-        "examples": {}
+          "Provides advanced strategy support and/or execution.",
+          "Identifies, drives and executes growth opportunities."
+        ]
       },
       {
+        "summary": "Leads Leaders / Lead Expert",
         "scope": [
-          "Demonstrates strategic thinking and decision making through a proven track record. Leads by example & improves team knowledge."
+          "You exhibit a high level of strategic thinking and decision-making prowess within your role, skilled at translating strategic plans into action, while taking the lead on key projects that align with the organization's overarching strategy. Your ability to bridge the gap between strategy and execution is a crucial asset, allowing you to drive the successful implementation of strategic initiatives."
         ],
         "focusAreas": [
-          "Strategic Awareness 3 area 1",
-          "Strategic Awareness 3 area 2",
-          "Strategic Awareness 3 area 3"
-        ],
-        "examples": {}
+          "Demonstrates strategic thinking and decision making.",
+          "Translates strategic plans while leading key projects."
+        ]
       },
       {
+        "summary": "Leads a Sub Function / Thought Leader",
         "scope": [
-          "Creates and develop longer term strategies that feed into the overall business goals. Is aware of ongoing industry developments that may impact strategy & communicates to the team. Anticipates future trends and implications."
+          "You play a vital role in shaping the organization's future direction, responsible for creating and nurturing long-term strategies that align with and contribute to the achievement of overarching tribe goals and OKR’s. Your awareness extends beyond the organization, as you continuously monitor ongoing industry developments that could influence your strategic approach. Moreover, you possess a keen ability to anticipate future trends and their potential implications, allowing you to proactively position the organization for success in a rapidly evolving landscape."
         ],
         "focusAreas": [
-          "Strategic Awareness 4 area 1",
-          "Strategic Awareness 4 area 2",
-          "Strategic Awareness 4 area 3"
-        ],
-        "examples": {}
+          "Creates and develops longer term strategies that feed into the overall business goals.",
+          "Is aware of ongoing industry developments that may impact strategy.",
+          "Anticipates future trends and implications."
+        ]
       },
       {
+        "summary": "Leads a Function",
         "scope": [
-          "Shapes long term vision for the business or the discipline. Can easily detect industry wide risks and opportunities and inspires & leads large group of people to navigate them. Understands micro and macro business trends and shapes a clear forward looking narrative for the organization/business."
+          "You hold a pivotal role in guiding the organization's long-term vision, whether it pertains to the business as a whole or a specific discipline within it. You provide leadership in making strategic decisions, drawing upon a comprehensive understanding of the entire business landscape. Your expertise extends to identifying industry-wide risks and opportunities, and you are adept at mobilizing and leading large groups of individuals to navigate these complex challenges and capitalize on opportunities. In essence, you are instrumental in shaping the organization's future trajectory and ensuring its continued success in a dynamic and ever-changing environment."
         ],
         "focusAreas": [
-          "Strategic Awareness 5 area 1",
-          "Strategic Awareness 5 area 2",
-          "Strategic Awareness 5 area 3"
-        ],
-        "examples": {}
+          "Shapes long term vision for the business or the discipline.",
+          "Leads strategic decisions with a thorough understanding of the entire business.",
+          "Detect industry wide risks and opportunities and leads large group of people to navigate them."
+        ]
       }
     ]
   }

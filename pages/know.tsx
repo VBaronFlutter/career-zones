@@ -71,88 +71,78 @@ export default function KnowWhereYoureAt() {
       <Navbar />
 
       <section className="intro">
-        <select onChange={(e) => setLevel((e as any).target.value)}>
+        <div>
           {Object.values(levels).map(({ title }, index) => (
-            <option key={`${title}-option`} value={index}>
-              {title}
-            </option>
+            <div className="chip-item" key={`${title}-option`}>
+              <Chip onClick={() => setLevel(index)}>{title}</Chip>
+            </div>
           ))}
-        </select>
 
-        <h1>{levels[level].title}</h1>
-        <h2>{levels[level].summary.toUpperCase()}</h2>
+          <h1>{levels[level].title}</h1>
+          <h2>{levels[level].summary.toUpperCase()}</h2>
 
-        <div className="columns">
-          <nav>
+          <div className="columns">
+            <nav>
+              <ul>
+                {Object.values(competencies).map((competency, index) => (
+                  <li key={`${competency.title}-link`}>
+                    <a onClick={() => setCompetency(index)}>{competency.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            <div className="content">
+              <>
+                <h3>{competencies[competency].title}</h3>
+                <p>{competencies[competency].description}</p>
+                <h4>Scope</h4>
+                <p>{competencies[competency].levels[level].scope.join(' ')}</p>
+                <h4>Areas of focus</h4>
+                {competencies[competency].levels[level].focusAreas.length &&
+                (
+                  <ul>
+                    <li>
+                        <input
+                          type="checkbox"
+                          onChange={(e) => onFocusAreaChange(e, index)}
+                          id="foo"
+                        />
+                        <label htmlFor="foo"></label>
+                        test
+                      </li>
+                    {competencies[competency].levels[level].focusAreas.map((focusArea, index) => (
+                      <li key={`${index}`}>
+                        <input
+                          type="checkbox"
+                          onChange={(e) => onFocusAreaChange(e, index)}
+                          id={`${index}`}
+                          checked={selectedAreas[competency] && selectedAreas[competency][level] ? selectedAreas[competency][level].includes(index) : false}
+                        />
+                        <label htmlFor={`${index}`}></label>
+                        {focusArea}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </>
+            </div>
+          <div className='content-selected'>
+            <p>
+              Selected areas of focus for <u>{competencies[competency].title}</u> at level{' '}
+              <u>{levels[level].title}</u>
+            </p>
             <ul>
-              {Object.values(competencies).map((competency, index) => (
-                <li key={`${competency.title}-link`}>
-                  <a onClick={() => setCompetency(index)}>{competency.title}</a>
-                </li>
-              ))}
+              {/* {competencies[competency].levels[level].focusAreas.map((focusArea, index) => {
+                return selectedAreas[competency][level].includes(index) ||
+                  !selectedAreas[competency][level].length ? (
+                  <li key={`${index}`}>{focusArea}</li>
+                ) : null;
+              })} */}
             </ul>
-          </nav>
-
-          <div className="content">
-            <>
-              <h3>{competencies[competency].title}</h3>
-              <p>{competencies[competency].description}</p>
-              <h4>Scope</h4>
-              <p>{competencies[competency].levels[level].scope.join(' ')}</p>
-              <h4>Areas of focus</h4>
-              {competencies[competency].levels[level].focusAreas.length && (
-                <ul>
-                  {competencies[competency].levels[level].focusAreas.map((focusArea, index) => (
-                    <li key={`${index}`}>
-                      <input
-                        type="checkbox"
-                        onChange={(e) => onFocusAreaChange(e, index)}
-                        checked={selectedAreas[competency][level].includes(index)}
-                      />
-                      {focusArea}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </>
+          </div>
           </div>
         </div>
-        <p>
-          Selected areas of focus for <u>{competencies[competency].title}</u> at level{' '}
-          <u>{levels[level].title}</u>
-        </p>
-        <ul>
-          {competencies[competency].levels[level].focusAreas.map((focusArea, index) => {
-            return selectedAreas[competency][level].includes(index) ||
-              !selectedAreas[competency][level].length ? (
-              <li key={`${index}`}>{focusArea}</li>
-            ) : null;
-          })}
-        </ul>
-
-        <Chip
-          size="large"
-          onClicks={[
-            () => console.log('TOP'),
-            () => console.log('RIGHT'),
-            () => console.log('BOTTOM'),
-            () => console.log('LEFT')
-          ]}
-          rotate={10}
-        >
-          Principal Engineer
-        </Chip>
-        <Chip disabled>Specialist</Chip>
-        <Chip
-          size="small"
-          type="secondary"
-          onClicks={[() => console.log('TOP'), , , () => console.log('LEFT')]}
-        >
-          Leads Individuals
-        </Chip>
-        <Chip size="x-small" type="secondary">
-          Leads Individuals
-        </Chip>
       </section>
     </main>
   );
