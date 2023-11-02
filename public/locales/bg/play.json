@@ -1,0 +1,23 @@
+{
+    "Playtitle": "Make Your Play",
+    "PlaySubStart": "The",
+    "PlaySubEnd": "Model",
+    "PlaySubInfo": "This model is based on how we learn best and made up of development actions. We have built these actions around our competencies to help you build a uniquely targeted Play.",
+    "MakeYourPlay": "Make Your Play",
+    "PlayTextUnlock": "AND UNLOCK YOUR FULL POTENTIAL!",
+    "PlayIntroPara": "Now that you know which competencies you want to develop, you need to learn how to develop them. We've suggested some development actions under the 70:20:10 model. What's that? Simple - it's a model based on how we learn best. Let's take a look...",
+    "PlayExperienceTitle": "EXPERIENCE",
+    "PlayExperienceInfo": "You learn and develop through day-to-day tasks, challenges and practice.",
+    "PlaySocialTitle": "SOCIAL",
+    "PlaySocialInfo": "You learn and develop with, and through, others from networking, collaborating and sharing best practice.",
+    "PlayTrainingTitle": "TRAINING",
+    "PlayTraininginfo": "You learn and develop through structured courses, be it online or face to face.",
+    "PlayLastPara": "Now what?",
+    "PlayLastParaBullets": {
+       "1": "Make your Play",
+       "2": "Discuss Career Zones with mentor/manager",
+       "3": "Create an IDP using your slected learning",
+       "4": "Learning @ International Sports - What's on offer?"
+    }
+}
+  

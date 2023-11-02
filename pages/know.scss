@@ -40,6 +40,11 @@ section {
         line-height: 1;
     }
 
+    .content,
+    .content-selected {
+        padding: $unit-small;
+    }
+
     nav {
         position: relative;
 

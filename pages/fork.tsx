@@ -1,8 +1,11 @@
 import Navbar from '../components/Navigation/Navbar';
 import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import styles from './fork.scss';
 
-export default function Fork() {
+const Fork = () => {
+  const { t } = useTranslation('fork');
+
   return (
     <>
       <style jsx>{styles}</style>
@@ -12,9 +15,10 @@ export default function Fork() {
         <header>
           <div>
             <span>
-              <h1>
+              <h1>{t('Forktitle')}</h1>
+              {/* <h1>
                 The Fork <small>in the Road</small>
-              </h1>
+              </h1> */}
               <h4>
                 Competencies underpin our growth{' '}
                 <small>
@@ -66,4 +70,14 @@ export default function Fork() {
       </main>
     </>
   );
+};
+
+export default Fork;
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'fork']))
+    }
+  };
 }
