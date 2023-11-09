@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './Navbar.scss';
 import { useTranslation } from 'next-i18next';
+import CraftSwitcher from '../CraftSwitcher/CraftSwitcher';
 
 export default function Navbar() {
   const { t } = useTranslation('common', { keyPrefix: 'nav' });
@@ -23,6 +24,9 @@ export default function Navbar() {
           </li>
           <li className={Router.asPath === '/play' ? 'active' : ''}>
             <Link href="/play">{t('4')}</Link>
+          </li>
+          <li className="numberless">
+            <CraftSwitcher version="nav"/>
           </li>
         </ol>
       </nav>

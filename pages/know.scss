@@ -23,6 +23,13 @@ section {
     display: inline-block;
 }
 
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: $unit-medium;
+    padding: 0;
+}
+
 .columns {
     @include width-limit;
     display: grid;
@@ -86,7 +93,7 @@ section {
                 padding: $unit-small $unit-medium;
             }
 
-            &:first-child,
+            &.selected,
             &:hover {
                 background: white;
                 color: $color-brand;

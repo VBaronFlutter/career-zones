@@ -1,43 +1,13 @@
 export interface Competencies {
-  People: PeopleOrResults;
-  Culture: CultureOrGameChangerOrDirectionOrStrategicAwareness;
-  GameChanger: CultureOrGameChangerOrDirectionOrStrategicAwareness;
-  Results: PeopleOrResults;
-  Direction: CultureOrGameChangerOrDirectionOrStrategicAwareness;
-  StrategicAwareness: CultureOrGameChangerOrDirectionOrStrategicAwareness;
+  competencies?: (CompetenciesEntity)[] | null;
 }
-export interface PeopleOrResults {
+export interface CompetenciesEntity {
   title: string;
   description: string;
-  core?: (string)[] | null;
-  learning: Learning;
+  levels?: (LevelsEntity)[] | null;
 }
-export interface Learning {
-  experience?: (string)[] | null;
-  social?: (string)[] | null;
-  training: Training;
-}
-export interface Training {
-  udemy?: (UdemyEntityOrVideosEntityOrOtherEntity)[] | null;
-  videos?: (UdemyEntityOrVideosEntityOrOtherEntity)[] | null;
-  other?: (UdemyEntityOrVideosEntityOrOtherEntity)[] | null;
-}
-export interface UdemyEntityOrVideosEntityOrOtherEntity {
-  title: string;
-  url: string;
-}
-export interface CultureOrGameChangerOrDirectionOrStrategicAwareness {
-  title: string;
-  description: string;
-  core?: (string)[] | null;
-  learning: Learning1;
-}
-export interface Learning1 {
-  experience?: (string)[] | null;
-  social?: (string)[] | null;
-  training: Training1;
-}
-export interface Training1 {
-  udemy?: (UdemyEntityOrVideosEntityOrOtherEntity)[] | null;
-  other?: (UdemyEntityOrVideosEntityOrOtherEntity)[] | null;
+export interface LevelsEntity {
+  summary: string;
+  scope?: (string)[] | null;
+  focusAreas?: (string)[] | null;
 }

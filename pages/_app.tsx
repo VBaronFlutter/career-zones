@@ -1,7 +1,13 @@
 import Head from 'next/head';
 import { appWithTranslation } from 'next-i18next';
 import { SWRConfig } from '../api/client';
+import { useState } from 'react';
+import { CraftContext } from '../context/craft';
+
 function MyApp({ Component, pageProps }) {
+  const [ craft, setCraft ] = useState("engineering");
+  const wrappedStateForContext = { craft, setCraft };
+
   return (
     <>
       <Head>
@@ -11,7 +17,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </Head>
       <SWRConfig value={pageProps?.api ? { fallback: pageProps.api } : undefined}>
-        <Component {...pageProps} />
+        <CraftContext.Provider value={wrappedStateForContext}>
+          <Component {...pageProps} />
+        </CraftContext.Provider>
       </SWRConfig>
     </>
   );

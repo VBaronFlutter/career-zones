@@ -1,9 +1,9 @@
 {
-  "title": "Software Engineering",
+  "title": "Software Engineering in Test",
   "description": "Craft is your bread and butter, it's what you trained as and what you're known for. Being a Software Engineer means navigating the dynamic world of technology with a unique blend of creativity, problem-solving, and precision. Translating complex ideas into practical solutions, writing lines of code that bring concepts to life. You're constantly adapting to evolving technologies and are driven by a passion for innovation, and often serve as the bridge between technical complexity and user-friendly experiences.",
   "levels": [
     {
-      "title": "Software Engineer",
+      "title": "Software Engineer in Test",
       "zone": "ic",
       "summary": "Leads Self",
       "scope": [
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "title": "Senior Software Engineer",
+      "title": "Senior Software Engineer in Test",
       "zone": "ic",
       "summary": "Expert / Specialist",
       "scope": [
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "title": "Lead Software Engineer",
+      "title": "Lead Software Engineer in Test",
       "zone": "pl",
       "summary": "Leads individuals",
       "scope": [
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "title": "Principal Software Engineer",
+      "title": "Principal Software Engineer in Test",
       "zone": "ic",
       "summary": "Lead Expert",
       "scope": [
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "title": "Senior Principal Software Engineer",
+      "title": "Senior Principal Software Engineer in Test",
       "zone": "ic",
       "summary": "Thought Leader",
       "scope": [
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "title": "Head of Engineering",
+      "title": "Head of Test",
       "zone": "pl",
       "summary": "Leads a Sub Function",
       "scope": [

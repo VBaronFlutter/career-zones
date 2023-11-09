@@ -29,7 +29,11 @@ li {
     &.active {
         border-bottom: 3px solid $color-brand;
     }
+}
 
+li.numberless {
+    list-style: none;
+    margin: 0;
 }
 
 nav :global(a) {

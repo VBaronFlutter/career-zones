@@ -4,12 +4,9 @@ export interface Engineering {
   levels?: (LevelsEntity)[] | null;
 }
 export interface LevelsEntity {
+  title: string;
+  zone: string;
+  summary: string;
   scope?: (string)[] | null;
   focusAreas?: (string)[] | null;
-  model: Model;
-}
-export interface Model {
-  seventy?: (string)[] | null;
-  twenty?: (string)[] | null;
-  ten?: (string)[] | null;
 }

@@ -12,7 +12,7 @@ const Home = () => {
       <style jsx>{styles}</style>
       <Navbar />
       <Header />
-
+      
       <section className="intro">
 
         <figure></figure>
